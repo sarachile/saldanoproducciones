@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <Link href="/" className="relative h-8 w-36">
             <Image
-                src="/logo cabera.png"
+                src="/logo cabecera.png"
                 alt="Cabera Producciones Logo"
                 fill
                 className="object-contain"
