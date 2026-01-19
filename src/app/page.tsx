@@ -1,5 +1,4 @@
 import HeroSection from '@/components/landing/hero-section';
-import FeaturedCarousel from '@/components/landing/featured-carousel';
 import AboutUs from '@/components/landing/about-us';
 import Services from '@/components/landing/services';
 import Experience from '@/components/landing/experience';
@@ -19,12 +18,11 @@ export default function Home() {
       <Services />
       <BrandsSection />
       <ClientsMarquee />
-      <FeaturedCarousel />
+      <Gallery />
       <AboutUs />
       <Experience />
       <Partners />
       <Team />
-      <Gallery />
       <ContactSection />
     </>
   );
