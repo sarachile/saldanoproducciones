@@ -1,24 +1,18 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
-
   return (
     <section className="relative h-screen w-full flex items-center justify-center text-center text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+      <video
+        src="/header.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 px-4">
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">

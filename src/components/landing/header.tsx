@@ -17,7 +17,7 @@ const navLinks = [
 const Logo = () => (
     <Link href="/" className="relative h-10 w-40">
         <Image
-            src="/logo%20cabecera.png"
+            src="/logo.png"
             alt="Cabera Producciones Logo"
             fill
             className="object-contain"
