@@ -9,19 +9,19 @@
     {
       "id": "carousel1",
       "description": "Featured event 1",
-      "imageUrl": "https://images.unsplash.com/photo-1767986012154-db9a321c8832?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3ZWRkaW5nJTIwY2VsZWJyYXRpb258ZW58MHx8fHwxNzY4ODM2MzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento1.jpg",
       "imageHint": "wedding celebration"
     },
     {
       "id": "carousel2",
       "description": "Featured event 2",
-      "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlfGVufDB8fHx8MTc2ODgzNjM5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento2.jpg",
       "imageHint": "corporate conference"
     },
     {
       "id": "carousel3",
       "description": "Featured event 3",
-      "imageUrl": "https://images.unsplash.com/photo-1643335622043-22b119a1f87e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb25jZXJ0JTIwbGlnaHRzfGVufDB8fHx8MTc2ODgwNzc2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento3.jpg",
       "imageHint": "concert lights"
     },
     {
@@ -31,19 +31,19 @@
       "imageHint": "event setup"
     },
     {
-      "id": "testimonial1",
+      "id": "t1",
       "description": "Testimonial author 1",
       "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njg3NzQ4OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
-      "id": "testimonial2",
+      "id": "t2",
       "description": "Testimonial author 2",
       "imageUrl": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2ODc2NzUzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person smiling"
     },
     {
-      "id": "testimonial3",
+      "id": "t3",
       "description": "Testimonial author 3",
       "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3Njg3MzY1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
@@ -57,19 +57,19 @@
     {
       "id": "partner2",
       "description": "Partner logo 2",
-      "imageUrl": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFuZCUyMGxvZ298ZW58MHx8fHwxNzY4ODA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFuZCUyMGxvZ298ZW58MHx8fHwxNzY4ODA2NTk4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "brand logo"
     },
     {
       "id": "partner3",
       "description": "Partner logo 3",
-      "imageUrl": "https://images.unsplash.com/photo-1662057168154-89300791ad6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Njg3NTM2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662057168154-89300791ad6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Njg3NTM2NzB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tech logo"
     },
     {
       "id": "partner4",
       "description": "Partner logo 4",
-      "imageUrl": "https://images.unsplash.com/photo-1557653038-2eccb2175702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbG9nb3xlbnwwfHx8fDE3Njg4MzYzOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557653038-2eccb2175702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbG9nb3xlbnwwfHx8fDE3Njg4MzYzOTN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "fashion logo"
     },
     {
@@ -87,49 +87,49 @@
     {
       "id": "team2",
       "description": "Team member 2",
-      "imageUrl": "https://images.unsplash.com/photo-1607487768473-cbe887eb0a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBjYW5kaWR8ZW58MHx8fHwxNzY4ODAyOTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1607487768473-cbe887eb0a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBjYW5kaWR8ZW58MHx8fHwxNzY4ODAyOTIyfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person candid"
     },
     {
       "id": "team3",
       "description": "Team member 3",
-      "imageUrl": "https://images.unsplash.com/photo-1637164153353-ef260e2e7e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBvZmZpY2V8ZW58MHx8fHwxNzY4NzgwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637164153353-ef260e2e7e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBvZmZpY2V8ZW58MHx8fHwxNzY4NzgwNDI0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person office"
     },
     {
       "id": "gallery1",
       "description": "Gallery image 1",
-      "imageUrl": "https://images.unsplash.com/photo-1768508660415-d94e940e0cd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxldmVudCUyMGRldGFpbHN8ZW58MHx8fHwxNzY4ODM2MzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento4.jpg",
       "imageHint": "event details"
     },
     {
       "id": "gallery2",
       "description": "Gallery image 2",
-      "imageUrl": "https://images.unsplash.com/photo-1611679099100-807871562ec8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWRkaW5nJTIwZGVjb3JhdGlvbnN8ZW58MHx8fHwxNzY4ODM2MzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento5.jpg",
       "imageHint": "wedding decorations"
     },
     {
       "id": "gallery3",
       "description": "Gallery image 3",
-      "imageUrl": "https://images.unsplash.com/photo-1543168256-8133cc8e3ee4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYXJ0eSUyMGZvb2R8ZW58MHx8fHwxNzY4ODM2MzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento6.jpg",
       "imageHint": "party food"
     },
     {
       "id": "gallery4",
       "description": "Gallery image 4",
-      "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaXZlJTIwbXVzaWN8ZW58MHx8fHwxNzY4ODM2MzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento7.jpg",
       "imageHint": "live music"
     },
     {
       "id": "gallery5",
       "description": "Gallery image 5",
-      "imageUrl": "https://images.unsplash.com/photo-1484712401471-05c7215830eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZW9wbGUlMjBkYW5jaW5nfGVufDB8fHx8MTc2ODgzNjM5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento8.jpg",
       "imageHint": "people dancing"
     },
     {
       "id": "gallery6",
       "description": "Gallery image 6",
-      "imageUrl": "https://images.unsplash.com/photo-1518890569493-668df9a00266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxldmVudCUyMHZlbnVlfGVufDB8fHx8MTc2ODgzNjM5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fotoseventos/evento9.jpg",
       "imageHint": "event venue"
     }
   ]
