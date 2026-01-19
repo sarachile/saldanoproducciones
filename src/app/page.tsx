@@ -1,4 +1,5 @@
 import HeroSection from '@/components/landing/hero-section';
+import AwardsSection from '@/components/landing/awards-section';
 import FeaturedCarousel from '@/components/landing/featured-carousel';
 import AboutUs from '@/components/landing/about-us';
 import Services from '@/components/landing/services';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <AwardsSection />
       <FeaturedCarousel />
       <AboutUs />
       <Services />
