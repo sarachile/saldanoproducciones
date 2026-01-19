@@ -7,11 +7,13 @@ import Partners from '@/components/landing/partners';
 import Team from '@/components/landing/team';
 import Gallery from '@/components/landing/gallery';
 import ContactSection from '@/components/landing/contact-section';
+import CommercialPhrase from '@/components/landing/commercial-phrase';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <CommercialPhrase />
       <FeaturedCarousel />
       <AboutUs />
       <Services />
