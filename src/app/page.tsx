@@ -8,6 +8,7 @@ import Team from '@/components/landing/team';
 import Gallery from '@/components/landing/gallery';
 import ContactSection from '@/components/landing/contact-section';
 import CommercialPhrase from '@/components/landing/commercial-phrase';
+import BrandsSection from '@/components/landing/brands-section';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <CommercialPhrase />
       <Services />
+      <BrandsSection />
       <FeaturedCarousel />
       <AboutUs />
       <Experience />
