@@ -11,15 +11,28 @@ import { Button } from '@/components/ui/button';
 
 // Use only real photos from the public folder
 const images = [
-  "/fotoseventos/foto1.webp",
-  "/fotoseventos/foto2.webp",
-  "/fotoseventos/foto3.webp",
-  "/fotoseventos/foto4.webp",
-  "/fotoseventos/foto5.webp",
-  "/fotoseventos/foto6.webp",
-  "/fotoseventos/foto7.webp",
-  "/fotoseventos/foto8.webp",
-  "/fotoseventos/foto9.webp",
+  "/fotoseventos/c.2.2.png",
+  "/fotoseventos/c.2.3.png",
+  "/fotoseventos/c.2.4.png",
+  "/fotoseventos/c.2.5.png",
+  "/fotoseventos/c.2.6.png",
+  "/fotoseventos/c.2.7.png",
+  "/fotoseventos/c.2.8.png",
+  "/fotoseventos/c.2.9.png",
+  "/fotoseventos/c.2.10.png",
+  "/fotoseventos/c.2.11.png",
+  "/fotoseventos/c.2.12.png",
+  "/fotoseventos/c.2.13.png",
+  "/fotoseventos/c.2.14.png",
+  "/fotoseventos/c.2.16.png",
+  "/fotoseventos/c.2.17.png",
+  "/fotoseventos/c.19.png",
+  "/fotoseventos/c.21.png",
+  "/fotoseventos/c3.png",
+  "/fotoseventos/c4.png",
+  "/fotoseventos/c5.png",
+  "/fotoseventos/c6.png",
+  "/fotoseventos/c7.png",
 ];
 
 const carouselImages = images.slice(0, 5);
