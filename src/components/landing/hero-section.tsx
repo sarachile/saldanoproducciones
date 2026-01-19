@@ -13,11 +13,15 @@ export default function HeroSection() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="relative z-10 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold text-primary">
-          <span className="font-script">Saldaño</span> <span className="font-handwritten -ml-4">Producciones</span>
-        </h1>
+      <div className="absolute inset-0 bg-black/60 z-10" />
+      <div className="relative z-20 px-4">
+        
+        <img 
+            src="/logo.png" 
+            alt="Saldaño Producciones Logo" 
+            className="mx-auto w-full max-w-xl h-auto"
+        />
+
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-balance text-foreground/90">
           Creamos experiencias inolvidables. Eventos, catering y producción de alta gama.
         </p>
@@ -30,7 +34,7 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="absolute bottom-10 z-10">
+      <div className="absolute bottom-10 z-20">
         <Link href="#destacados" aria-label="Scroll down">
           <ArrowDown className="h-8 w-8 text-white/70 animate-bounce" />
         </Link>
