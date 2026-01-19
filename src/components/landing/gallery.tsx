@@ -11,7 +11,6 @@ import {
   Dialog,
   DialogContent,
 } from '@/components/ui/dialog';
-import Autoplay from "embla-carousel-autoplay";
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
@@ -44,10 +43,6 @@ const images = [
 export default function Gallery() {
   const [open, setOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
-  
-  const autoplayPlugin = useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
-  );
 
   const openLightbox = (index: number) => {
     setSelectedIndex(index);
@@ -95,7 +90,6 @@ export default function Gallery() {
             align: 'start',
             loop: true,
           }}
-          plugins={[autoplayPlugin.current]}
           className="w-full"
         >
           <CarouselContent className="-ml-4">
