@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="relative z-10 px-4">
          <div className="relative mx-auto w-full max-w-2xl h-40 md:h-52">
              <Image
-                src="/logo-clean.png"
+                src="/logo.png"
                 alt="Saldaño Producciones Logo"
                 fill
                 className="object-contain"
