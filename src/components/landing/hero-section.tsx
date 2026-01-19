@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 px-4">
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-primary tracking-tight">
-          Cabera Producciones
+          Saldaño Producciones
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-balance text-foreground/90">
           Creamos experiencias inolvidables. Eventos, catering y producción de alta gama.
