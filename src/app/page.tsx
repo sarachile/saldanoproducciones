@@ -9,6 +9,7 @@ import Gallery from '@/components/landing/gallery';
 import ContactSection from '@/components/landing/contact-section';
 import CommercialPhrase from '@/components/landing/commercial-phrase';
 import BrandsSection from '@/components/landing/brands-section';
+import ClientsMarquee from '@/components/landing/clients-marquee';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <CommercialPhrase />
       <Services />
       <BrandsSection />
+      <ClientsMarquee />
       <FeaturedCarousel />
       <AboutUs />
       <Experience />
