@@ -34,8 +34,6 @@ const images = [
   "/fotoseventos/c.2.14.png",
   "/fotoseventos/c.2.16.png",
   "/fotoseventos/c.2.17.png",
-  "/fotoseventos/c.19.png",
-  "/fotoseventos/c.21.png",
   "/fotoseventos/c3.png",
   "/fotoseventos/c4.png",
   "/fotoseventos/c5.png",
