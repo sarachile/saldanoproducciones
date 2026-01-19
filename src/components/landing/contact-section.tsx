@@ -30,7 +30,7 @@ export default function ContactSection() {
               <ContactInfo icon={Phone} text="+56 9 9338 2819" href="tel:+56993382819" />
               <ContactInfo icon={MapPin} text="Avda. Sur 250, Maipú, Santiago" />
             </div>
-            <div className="text-muted-foreground text-sm space-y-2 border-l-2 border-primary/50 pl-4">
+            <div className="text-foreground/80 text-sm space-y-2 border-l-2 border-primary/50 pl-4">
                 <p>Resolución sanitaria 3173 y 3174 del 02/06/2020.</p>
                 <p>Patente rol 2 33936.</p>
                 <p className="pt-4">Nuestro horario de atención es de Lunes a Viernes, de 9:00 a 18:00 hrs.</p>
