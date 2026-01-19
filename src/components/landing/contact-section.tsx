@@ -26,13 +26,15 @@ export default function ContactSection() {
           <div className="space-y-8">
             <h3 className="text-2xl font-headline font-semibold">Información de Contacto</h3>
             <div className="space-y-6">
-              <ContactInfo icon={Mail} text="contacto@saldanoproducciones.com" href="mailto:contacto@saldanoproducciones.com" />
-              <ContactInfo icon={Phone} text="+56 2 2123 4567" href="tel:+56221234567" />
-              <ContactInfo icon={MapPin} text="Av. Vitacura 2939, Las Condes, Santiago, Chile" />
+              <ContactInfo icon={Mail} text="saldanoproduccioneseirl@gmail.com" href="mailto:saldanoproduccioneseirl@gmail.com" />
+              <ContactInfo icon={Phone} text="+56 9 9338 2819" href="tel:+56993382819" />
+              <ContactInfo icon={MapPin} text="Avda. Sur 250, Maipú, Santiago" />
             </div>
-            <p className="text-muted-foreground">
-              Nuestro horario de atención es de Lunes a Viernes, de 9:00 a 18:00 hrs.
-            </p>
+            <div className="text-muted-foreground text-sm space-y-2 border-l-2 border-primary/50 pl-4">
+                <p>Resolución sanitaria 3173 y 3174 del 02/06/2020.</p>
+                <p>Patente rol 2 33936.</p>
+                <p className="pt-4">Nuestro horario de atención es de Lunes a Viernes, de 9:00 a 18:00 hrs.</p>
+            </div>
           </div>
           <div>
             <ContactForm />
