@@ -6,6 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from '@/components/ui/carousel';
 import {
   Dialog,
@@ -91,27 +93,29 @@ export default function Gallery() {
             align: 'start',
             loop: true,
           }}
-          className="w-full"
+          className="w-full relative group"
         >
           <CarouselContent className="-ml-4">
             {images.map((src, index) => (
               <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 pl-4">
                 <div 
-                  className="group relative aspect-video overflow-hidden rounded-lg cursor-pointer shadow-lg"
+                  className="group/item relative aspect-video overflow-hidden rounded-lg cursor-pointer shadow-lg"
                   onClick={() => openLightbox(index)}
                 >
                   <Image
                     src={src}
                     alt={`Galería de evento ${index + 1}`}
                     fill
-                    className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
+                    className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover/item:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   </div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselPrevious className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/50 text-white hover:bg-black/80 border-none transition-opacity opacity-0 group-hover:opacity-100 disabled:opacity-0" />
+          <CarouselNext className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/50 text-white hover:bg-black/80 border-none transition-opacity opacity-0 group-hover:opacity-100 disabled:opacity-0" />
         </Carousel>
       </div>
 
