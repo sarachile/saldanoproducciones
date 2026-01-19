@@ -8,13 +8,23 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const carouselImages = [
-    ...PlaceHolderImages.filter(img => img.id.startsWith('carousel')),
-    ...PlaceHolderImages.filter(img => img.id.startsWith('gallery')).slice(0,2)
+// Use only real photos from the public folder
+const images = [
+  "/fotoseventos/foto1.webp",
+  "/fotoseventos/foto2.webp",
+  "/fotoseventos/foto3.webp",
+  "/fotoseventos/foto4.webp",
+  "/fotoseventos/foto5.webp",
+  "/fotoseventos/foto6.webp",
+  "/fotoseventos/foto7.webp",
+  "/fotoseventos/foto8.webp",
+  "/fotoseventos/foto9.webp",
 ];
-const masonryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery'));
+
+const carouselImages = images.slice(0, 5);
+const masonryImages = images;
+
 
 export default function Gallery() {
   return (
@@ -34,18 +44,17 @@ export default function Gallery() {
             className="w-full"
             >
             <CarouselContent>
-                {carouselImages.map((image) => (
-                <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
+                {carouselImages.map((src, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
                     <Card className="overflow-hidden border-2 border-transparent hover:border-primary transition-colors">
                         <CardContent className="flex aspect-video items-center justify-center p-0">
                         <Image
-                            src={image.imageUrl}
-                            alt={image.description}
+                            src={src}
+                            alt={`Evento Saldaño Producciones ${index + 1}`}
                             width={1200}
                             height={800}
                             className="w-full h-full object-cover"
-                            data-ai-hint={image.imageHint}
                         />
                         </CardContent>
                     </Card>
@@ -60,15 +69,14 @@ export default function Gallery() {
 
         {/* Masonry Grid */}
         <div className="columns-2 md:columns-3 gap-4 space-y-4">
-            {masonryImages.map((image, index) => (
-                <div key={image.id} className="break-inside-avoid">
+            {masonryImages.map((src, index) => (
+                <div key={index} className="break-inside-avoid">
                     <Image
-                        src={image.imageUrl}
-                        alt={image.description}
+                        src={src}
+                        alt={`Momento evento ${index + 1}`}
                         width={600}
                         height={index % 2 === 0 ? 800 : 600}
                         className="w-full h-auto object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-                        data-ai-hint={image.imageHint}
                     />
                 </div>
             ))}
