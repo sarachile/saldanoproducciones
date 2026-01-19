@@ -60,7 +60,7 @@ export default function BurgerCartSection() {
                             alt="Santo Gusto Logo"
                             width={350}
                             height={120}
-                            className="object-contain h-auto mb-6"
+                            className="object-contain h-auto mb-6 mix-blend-darken"
                         />
                         <p className="text-lg text-foreground/90 mb-8 text-balance">
                             Lleva la experiencia completa a tu evento: un carrito gourmet de hamburguesas, rápido, caliente y lleno de sabor.
