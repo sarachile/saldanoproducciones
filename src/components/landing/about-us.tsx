@@ -1,9 +1,5 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function AboutUs() {
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us');
-
   return (
     <section id="quienes-somos" className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4">
@@ -20,17 +16,16 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="order-1 md:order-2">
-            {aboutImage && (
-              <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl">
-                 <Image
-                  src={aboutImage.imageUrl}
-                  alt={aboutImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={aboutImage.imageHint}
-                />
-              </div>
-            )}
+            <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl">
+              <video
+                src="/somos.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
