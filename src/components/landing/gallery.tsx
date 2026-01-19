@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +10,7 @@ import {
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -116,6 +117,7 @@ export default function Gallery() {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="p-0 border-0 bg-black/80 max-w-none w-screen h-screen">
+          <DialogTitle className="sr-only">Galería de Imágenes</DialogTitle>
           <div className="relative w-full h-full flex items-center justify-center">
             <Image
               src={images[selectedIndex]}
