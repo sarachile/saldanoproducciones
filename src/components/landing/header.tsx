@@ -18,7 +18,7 @@ const Logo = () => (
     <Link href="/" className="relative h-10 w-40">
         <Image
             src="/logo.png"
-            alt="Cabera Producciones Logo"
+            alt="Saldaño Producciones Logo"
             fill
             className="object-contain"
             priority

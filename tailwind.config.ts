@@ -13,6 +13,8 @@ export default {
         body: ["'PT Sans'", 'sans-serif'],
         headline: ["'Playfair Display'", 'serif'],
         code: ['monospace'],
+        script: ["'Great Vibes'", 'cursive'],
+        handwritten: ["'La Belle Aurore'", 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',
