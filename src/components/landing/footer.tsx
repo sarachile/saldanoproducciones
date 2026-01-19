@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -16,9 +17,13 @@ export default function Footer() {
     <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <Link href="/" className="text-xl font-headline font-bold text-primary">
-            Saldaño
-            <span className="text-foreground">Producciones</span>
+          <Link href="/" className="relative h-8 w-36">
+            <Image
+                src="/logo.svg"
+                alt="Saldaño Producciones Logo"
+                fill
+                className="object-contain"
+            />
           </Link>
           <div className="flex gap-2">
             <SocialLink href="https://facebook.com" icon={Facebook} />

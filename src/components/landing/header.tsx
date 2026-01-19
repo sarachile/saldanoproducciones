@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -14,10 +15,15 @@ const navLinks = [
 ];
 
 const Logo = () => (
-  <Link href="/" className="text-2xl font-headline font-bold text-primary">
-    Saldaño
-    <span className="text-foreground">Producciones</span>
-  </Link>
+    <Link href="/" className="relative h-10 w-40">
+        <Image
+            src="/logo.svg"
+            alt="Saldaño Producciones Logo"
+            fill
+            className="object-contain"
+            priority
+        />
+    </Link>
 );
 
 export default function Header() {
