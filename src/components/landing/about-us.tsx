@@ -18,7 +18,7 @@ export default function AboutUs() {
           <div className="order-1 md:order-2">
             <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl">
               <video
-                src="/somos.mp4"
+                src="/final.mp4"
                 autoPlay
                 loop
                 muted
