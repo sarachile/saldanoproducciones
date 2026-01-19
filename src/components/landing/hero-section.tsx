@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
-import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -16,15 +15,9 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 px-4">
-        <div className="relative w-full max-w-lg mx-auto aspect-[3/1]">
-            <Image
-                src="/logo.png"
-                alt="Saldaño Producciones"
-                fill
-                className="object-contain"
-                priority
-            />
-        </div>
+        <h1 className="text-5xl md:text-7xl font-bold text-primary">
+          <span className="font-script">Saldaño</span> <span className="font-handwritten -ml-4">Producciones</span>
+        </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-balance text-foreground/90">
           Creamos experiencias inolvidables. Eventos, catering y producción de alta gama.
         </p>
