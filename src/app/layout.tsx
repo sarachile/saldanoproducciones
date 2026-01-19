@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
+import WhatsAppButton from '@/components/landing/whatsapp-button';
 
 export const metadata: Metadata = {
   title: 'Saldaño Producciones - Eventos Premium',
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
         <Toaster />
       </body>
     </html>
