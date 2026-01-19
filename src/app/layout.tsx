@@ -6,7 +6,7 @@ import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
 
 export const metadata: Metadata = {
-  title: 'Saldaño Producciones - Eventos Premium',
+  title: 'Cabera Producciones - Eventos Premium',
   description: 'Empresa dedicada a eventos, catering y producción de alta gama.',
   keywords: 'eventos, bodas, catering, producción, matrimonios, eventos corporativos',
 };

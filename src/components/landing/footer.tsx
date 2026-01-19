@@ -19,8 +19,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <Link href="/" className="relative h-8 w-36">
             <Image
-                src="/logo.svg"
-                alt="Saldaño Producciones Logo"
+                src="/logo cabera.png"
+                alt="Cabera Producciones Logo"
                 fill
                 className="object-contain"
             />
@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Saldaño Producciones. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Cabera Producciones. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
