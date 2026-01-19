@@ -60,6 +60,13 @@ export default function BrandsSection() {
             />
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative z-20 px-4 flex flex-col items-center">
+               <Image
+                src="/casateencasa.jpeg"
+                alt="Cásate en Casa Logo"
+                width={400}
+                height={150}
+                className="object-contain h-auto mb-4 mix-blend-screen"
+              />
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-white mb-4 text-balance">
                 Cásate en Casa
               </h2>
