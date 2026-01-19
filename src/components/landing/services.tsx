@@ -59,7 +59,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
             Nuestros Servicios
           </h2>
-          <p className="mt-2 max-w-2xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
             Soluciones integrales para cada ocasión, con un sello de excelencia.
           </p>
         </div>
