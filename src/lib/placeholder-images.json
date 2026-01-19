@@ -31,36 +31,6 @@
       "imageHint": "event setup"
     },
     {
-      "id": "partner1",
-      "description": "Partner logo 1",
-      "imageUrl": "https://images.unsplash.com/photo-1562783912-21ad31ee2a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3Njg3MzM4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "company logo"
-    },
-    {
-      "id": "partner2",
-      "description": "Partner logo 2",
-      "imageUrl": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFuZCUyMGxvZ298ZW58MHx8fHwxNzY4ODA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "brand logo"
-    },
-    {
-      "id": "partner3",
-      "description": "Partner logo 3",
-      "imageUrl": "https://images.unsplash.com/photo-1662057168154-89300791ad6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Njg3NTM2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tech logo"
-    },
-    {
-      "id": "partner4",
-      "description": "Partner logo 4",
-      "imageUrl": "https://images.unsplash.com/photo-1557653038-2eccb2175702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbG9nb3xlbnwwfHx8fDE3Njg4MzYzOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion logo"
-    },
-    {
-      "id": "partner5",
-      "description": "Partner logo 5",
-      "imageUrl": "https://images.unsplash.com/photo-1553835973-dec43bfddbeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmb29kJTIwbG9nb3xlbnwwfHx8fDE3Njg3OTE1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "food logo"
-    },
-    {
       "id": "gallery1",
       "description": "Gallery image 1",
       "imageUrl": "/fotoseventos/evento4.jpg",
