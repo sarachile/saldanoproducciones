@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const teamMembers = [
   {
     id: "team1",
-    name: "Juan Saldaño",
+    name: "Juan Cabera",
     role: "Director General y Fundador"
   },
   {

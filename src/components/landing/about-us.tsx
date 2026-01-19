@@ -13,7 +13,7 @@ export default function AboutUs() {
               Quiénes Somos
             </h2>
             <p className="text-lg text-foreground/90 mb-4 text-balance">
-              En Saldaño Producciones, transformamos ideas en eventos memorables. Con años de experiencia en la industria, nuestro equipo de profesionales se dedica a la excelencia, cuidando cada detalle para superar las expectativas de nuestros clientes.
+              En Cabera Producciones, transformamos ideas en eventos memorables. Con años de experiencia en la industria, nuestro equipo de profesionales se dedica a la excelencia, cuidando cada detalle para superar las expectativas de nuestros clientes.
             </p>
             <p className="text-foreground/80">
               Desde bodas íntimas hasta grandes eventos corporativos, nuestra pasión es crear momentos únicos. Fusionamos creatividad, logística impecable y un servicio de catering excepcional para garantizar que cada ocasión sea un éxito rotundo.

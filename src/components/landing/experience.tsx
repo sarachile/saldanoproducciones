@@ -12,7 +12,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const testimonials = [
   {
     id: "t1",
-    quote: "La organización fue impecable y el catering delicioso. ¡Nuestro matrimonio fue un sueño hecho realidad gracias a Saldaño Producciones!",
+    quote: "La organización fue impecable y el catering delicioso. ¡Nuestro matrimonio fue un sueño hecho realidad gracias a Cabera Producciones!",
     name: "Ana y Juan",
     company: "Novios Felices",
   },
@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     id: "t3",
-    quote: "Manejar un evento para 5,000 personas no es fácil, pero el equipo de Saldaño lo hizo ver sencillo. Un éxito total.",
+    quote: "Manejar un evento para 5,000 personas no es fácil, pero el equipo de Cabera lo hizo ver sencillo. Un éxito total.",
     name: "Sofía Vergara",
     company: "Directora de Festival MúsicFest",
   },

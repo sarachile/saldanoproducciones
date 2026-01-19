@@ -26,7 +26,7 @@ export default function ContactSection() {
           <div className="space-y-8">
             <h3 className="text-2xl font-headline font-semibold">Información de Contacto</h3>
             <div className="space-y-6">
-              <ContactInfo icon={Mail} text="contacto@saldanoproducciones.com" href="mailto:contacto@saldanoproducciones.com" />
+              <ContactInfo icon={Mail} text="contacto@caberaproducciones.com" href="mailto:contacto@caberaproducciones.com" />
               <ContactInfo icon={Phone} text="+56 2 2123 4567" href="tel:+56221234567" />
               <ContactInfo icon={MapPin} text="Av. Vitacura 2939, Las Condes, Santiago, Chile" />
             </div>
