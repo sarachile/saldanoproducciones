@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const SocialLink = ({ href, icon: Icon }: { href: string; icon: React.ElementType }) => (
@@ -26,9 +26,7 @@ export default function Footer() {
             />
           </Link>
           <div className="flex gap-2">
-            <SocialLink href="https://facebook.com" icon={Facebook} />
-            <SocialLink href="https://instagram.com" icon={Instagram} />
-            <SocialLink href="https://linkedin.com" icon={Linkedin} />
+            <SocialLink href="https://www.instagram.com/saldano_producciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" icon={Instagram} />
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-muted-foreground">
