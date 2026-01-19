@@ -43,7 +43,7 @@ export default function BrandsSection() {
 
 
   return (
-    <section ref={ref} id="nuestras-marcas" className="py-16 md:py-24 bg-card">
+    <section ref={ref} id="nuestras-marcas" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Nuestras Marcas</h2>

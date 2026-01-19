@@ -32,7 +32,7 @@ const testimonials = [
 
 export default function Experience() {
   return (
-    <section id="experiencia" className="py-16 md:py-24 bg-card">
+    <section id="experiencia" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
           La Voz de Nuestros Clientes
@@ -44,7 +44,7 @@ export default function Experience() {
               return (
                 <CarouselItem key={testimonial.id}>
                   <div className="p-4">
-                    <Card className="bg-background border-border">
+                    <Card className="bg-card border-border">
                       <CardContent className="p-8 text-center">
                         <p className="text-lg italic text-foreground/90 mb-6 text-balance">
                           "{testimonial.quote}"

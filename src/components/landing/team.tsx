@@ -22,7 +22,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <section id="equipo" className="py-16 md:py-24 bg-card">
+    <section id="equipo" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Nuestro Equipo</h2>
@@ -34,7 +34,7 @@ export default function Team() {
           {teamMembers.map(member => {
             const image = PlaceHolderImages.find(img => img.id === member.id);
             return (
-              <Card key={member.id} className="bg-background text-center overflow-hidden border-border group">
+              <Card key={member.id} className="bg-card text-center overflow-hidden border-border group">
                 <CardContent className="p-0">
                   <div className="aspect-square relative">
                     {image && 

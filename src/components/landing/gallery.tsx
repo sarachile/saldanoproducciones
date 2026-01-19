@@ -6,7 +6,7 @@ const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery
 
 export default function Gallery() {
   return (
-    <section id="galeria" className="py-16 md:py-24 bg-background">
+    <section id="galeria" className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
           Galería de Momentos

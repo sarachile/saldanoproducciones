@@ -5,7 +5,7 @@ const partnerImages = PlaceHolderImages.filter(img => img.id.startsWith('partner
 
 export default function Partners() {
   return (
-    <section id="marcas" className="py-16 md:py-24 bg-background">
+    <section id="marcas" className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
           Marcas que Confían en Nosotros

@@ -34,7 +34,7 @@ export default function CommercialPhrase() {
   return (
     <section 
       ref={ref}
-      className="py-16 md:py-20 bg-background"
+      className="py-20 md:py-28 bg-background"
     >
       <div className="container mx-auto px-4">
         <div 
