@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <HeroSection />
       <CommercialPhrase />
+      <Services />
       <FeaturedCarousel />
       <AboutUs />
-      <Services />
       <Experience />
       <Partners />
       <Team />

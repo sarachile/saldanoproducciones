@@ -1,36 +1,53 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { PartyPopper, UtensilsCrossed, Briefcase, Users, Tent, Film } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { PartyPopper, Briefcase, Home, Star, Check } from "lucide-react";
 
-const services = [
+const serviceCategories = [
   {
+    id: "sociales",
     icon: PartyPopper,
     title: "Eventos Sociales",
-    description: "Bodas, cumpleaños y celebraciones. Diseñamos momentos únicos y personales."
+    services: [
+      "Matrimonios",
+      "Graduaciones",
+      "Cumpleaños",
+      "Bautizos",
+      "Fiestas Infantiles",
+    ],
   },
   {
+    id: "corporativos",
     icon: Briefcase,
     title: "Eventos Corporativos",
-    description: "Lanzamientos, conferencias y fiestas de fin de año. Proyectamos la imagen de tu empresa."
+    services: [
+      "Empresas",
+      "Municipalidades",
+      "Cooperativas",
+      "Casinos Institucionales",
+      "Entrega de Colaciones",
+    ],
   },
   {
-    icon: Users,
-    title: "Eventos Masivos",
-    description: "Conciertos, festivales y ferias. Producción a gran escala con logística impecable."
+    id: "terreno",
+    icon: Home,
+    title: "Eventos en Terreno / A Domicilio",
+    services: [
+      "Eventos a Domicilio",
+      "Eventos Aire Libre",
+      "Asados Campestres",
+      "Carrito Hamburguesas",
+      "Coffee Break",
+    ],
   },
   {
-    icon: UtensilsCrossed,
-    title: "Catering de Alta Cocina",
-    description: "Propuestas gastronómicas innovadoras que deleitan los paladares más exigentes."
-  },
-  {
-    icon: Tent,
-    title: "Logística y Montaje",
-    description: "Carpas, escenarios, iluminación y sonido. Creamos la atmósfera perfecta."
-  },
-  {
-    icon: Film,
-    title: "Producción Audiovisual",
-    description: "Cobertura de video y fotografía, streaming y contenido para redes sociales."
+    id: "produccion",
+    icon: Star,
+    title: "Producción & Servicios Extras",
+    services: ["Catering", "Grupos Musicales", "Salón"],
   },
 ];
 
@@ -39,26 +56,46 @@ export default function Services() {
     <section id="servicios" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Nuestros Servicios</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
+            Nuestros Servicios
+          </h2>
           <p className="mt-2 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Ofrecemos soluciones integrales para cualquier tipo de evento.
+            Soluciones integrales para cada ocasión, con un sello de excelencia.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <Card key={service.title} className="bg-card border-border hover:border-primary hover:-translate-y-2 transition-all duration-300 flex flex-col">
-              <CardHeader className="items-center text-center">
-                <div className="p-4 bg-primary/10 rounded-full mb-4">
-                  <service.icon className="h-8 w-8 text-primary" />
+
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full max-w-3xl mx-auto"
+        >
+          {serviceCategories.map((category) => (
+            <AccordionItem
+              key={category.id}
+              value={category.id}
+              className="border-b border-border/50 transition-all duration-300"
+            >
+              <AccordionTrigger className="py-6 px-4 text-lg hover:no-underline font-headline text-left">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-primary/10 rounded-full">
+                    <category.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <span>{category.title}</span>
                 </div>
-                <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardDescription className="text-center p-6 pt-0 flex-grow">
-                {service.description}
-              </CardDescription>
-            </Card>
+              </AccordionTrigger>
+              <AccordionContent className="pt-2 pb-6">
+                <ul className="space-y-3 pl-12 md:pl-20">
+                  {category.services.map((service) => (
+                    <li key={service} className="flex items-center gap-3 text-foreground/80">
+                      <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                      <span>{service}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
       </div>
     </section>
   );
