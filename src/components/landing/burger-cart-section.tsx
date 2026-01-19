@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { Instagram } from 'lucide-react';
 
 export default function BurgerCartSection() {
     const [isVisible, setIsVisible] = useState(false);
@@ -54,15 +55,27 @@ export default function BurgerCartSection() {
                         "transition-all duration-1000 ease-out delay-200",
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
-                        <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
-                            Carrito de Hamburguesas
-                        </h2>
+                        <Image
+                            src="/santogusto.png"
+                            alt="Santo Gusto Logo"
+                            width={350}
+                            height={120}
+                            className="object-contain h-auto mb-6"
+                        />
                         <p className="text-lg text-foreground/90 mb-8 text-balance">
                             Lleva la experiencia completa a tu evento: un carrito gourmet de hamburguesas, rápido, caliente y lleno de sabor.
                         </p>
-                        <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                            <Link href="#contacto">Cotizar Carrito</Link>
-                        </Button>
+                        <div className="flex flex-wrap gap-4 items-center">
+                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                                <Link href="#contacto">Cotizar Carrito</Link>
+                            </Button>
+                             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground group/insta">
+                                <a href="https://www.instagram.com/santogusto_carritogourmet?igsh=MTh0ZGE5amlkbTNybg==" target="_blank" rel="noopener noreferrer">
+                                    <Instagram className="mr-2 h-5 w-5 transition-transform duration-300 group-hover/insta:scale-125" />
+                                    <span>Ver en Instagram</span>
+                                </a>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
