@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const images = [
   "/fotoseventos/c.2.2.png",
@@ -82,7 +83,7 @@ export default function Gallery() {
   }, [open, goToNext, goToPrev]);
 
   return (
-    <section id="galeria" className="py-20 md:py-28 bg-background">
+    <section id="galeria" className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-16 text-primary">
           Galería de Momentos
@@ -121,8 +122,8 @@ export default function Gallery() {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="p-0 border-0 bg-black/80 max-w-none w-screen h-screen">
-          <DialogTitle className="sr-only">Galería de Imágenes</DialogTitle>
-          <div className="relative w-full h-full flex items-center justify-center">
+            <DialogTitle className="sr-only">Galería de Imágenes</DialogTitle>
+            <div className="relative w-full h-full flex items-center justify-center">
             <Image
               src={images[selectedIndex]}
               alt={`Galería de evento ${selectedIndex + 1}`}

@@ -14,7 +14,7 @@ const ContactInfo = ({ icon: Icon, text, href }: { icon: React.ElementType, text
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="py-20 md:py-28 bg-background">
+    <section id="contacto" className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Contáctanos</h2>

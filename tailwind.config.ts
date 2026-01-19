@@ -10,11 +10,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ["'PT Sans'", 'sans-serif'],
-        headline: ["'Playfair Display'", 'serif'],
+        body: ['Inter', 'sans-serif'],
+        headline: ['Oswald', 'sans-serif'],
         code: ['monospace'],
-        script: ["'Great Vibes'", 'cursive'],
-        handwritten: ["'La Belle Aurore'", 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',

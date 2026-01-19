@@ -1,7 +1,7 @@
 
 export default function AboutUs() {
   return (
-    <section id="quienes-somos" className="py-20 md:py-28 bg-card">
+    <section id="quienes-somos" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
