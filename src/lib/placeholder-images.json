@@ -31,24 +31,6 @@
       "imageHint": "event setup"
     },
     {
-      "id": "t1",
-      "description": "Testimonial author 1",
-      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njg3NzQ4OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
-    },
-    {
-      "id": "t2",
-      "description": "Testimonial author 2",
-      "imageUrl": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2ODc2NzUzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person smiling"
-    },
-    {
-      "id": "t3",
-      "description": "Testimonial author 3",
-      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3Njg3MzY1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional headshot"
-    },
-    {
       "id": "partner1",
       "description": "Partner logo 1",
       "imageUrl": "https://images.unsplash.com/photo-1562783912-21ad31ee2a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3Njg3MzM4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -57,19 +39,19 @@
     {
       "id": "partner2",
       "description": "Partner logo 2",
-      "imageUrl": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFuZCUyMGxvZ298ZW58MHx8fHwxNzY4ODA2NTk4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFuZCUyMGxvZ298ZW58MHx8fHwxNzY4ODA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "brand logo"
     },
     {
       "id": "partner3",
       "description": "Partner logo 3",
-      "imageUrl": "https://images.unsplash.com/photo-1662057168154-89300791ad6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Njg3NTM2NzB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662057168154-89300791ad6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Njg3NTM2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tech logo"
     },
     {
       "id": "partner4",
       "description": "Partner logo 4",
-      "imageUrl": "https://images.unsplash.com/photo-1557653038-2eccb2175702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbG9nb3xlbnwwfHx8fDE3Njg4MzYzOTN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557653038-2eccb2175702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbG9nb3xlbnwwfHx8fDE3Njg4MzYzOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fashion logo"
     },
     {
@@ -87,13 +69,13 @@
     {
       "id": "team2",
       "description": "Team member 2",
-      "imageUrl": "https://images.unsplash.com/photo-1607487768473-cbe887eb0a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBjYW5kaWR8ZW58MHx8fHwxNzY4ODAyOTIyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1607487768473-cbe887eb0a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBjYW5kaWR8ZW58MHx8fHwxNzY4ODAyOTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person candid"
     },
     {
       "id": "team3",
       "description": "Team member 3",
-      "imageUrl": "https://images.unsplash.com/photo-1637164153353-ef260e2e7e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBvZmZpY2V8ZW58MHx8fHwxNzY4NzgwNDI0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637164153353-ef260e2e7e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBvZmZpY2V8ZW58MHx8fHwxNzY4NzgwNDI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person office"
     },
     {
