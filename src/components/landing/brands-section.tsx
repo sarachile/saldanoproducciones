@@ -63,8 +63,8 @@ export default function BrandsSection() {
                <Image
                 src="/casateencasa.jpeg"
                 alt="Cásate en Casa Logo"
-                width={400}
-                height={150}
+                width={120}
+                height={45}
                 className="object-contain h-auto mb-4 mix-blend-screen"
               />
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-white mb-4 text-balance">
