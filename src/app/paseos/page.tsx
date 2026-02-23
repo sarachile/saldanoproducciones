@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Check, Mail, Phone, School, Briefcase, Trees, Sun, Utensils } from 'lucide-react';
+import { Check, Mail, Phone, School, Briefcase, Trees, Sun, Utensils, MapPin } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -19,7 +19,7 @@ const galleryImages = Array.from({ length: 11 }, (_, i) => `/p${i + 1}.jpeg`);
 
 export default function PaseosPage() {
     const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
+        Autoplay({ delay: 2000, stopOnInteraction: false })
     );
 
   return (
@@ -54,9 +54,13 @@ export default function PaseosPage() {
              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
                 Un Lugar Único para Desconectar y Celebrar
               </h2>
-              <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-12 text-balance">
+              <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-6 text-balance">
                 Contamos con un increíble centro de eventos equipado con todo lo necesario para que tu paseo de empresa o de curso sea un éxito rotundo. Disfruta de nuestras amplias áreas verdes, piscina, y salones en un ambiente seguro y privado.
               </p>
+              <div className="flex justify-center items-center gap-2 mb-12">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  <p className="text-foreground/80 font-semibold">Ubicado en Avda. Sur 250, Maipú, Santiago</p>
+              </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-4xl mx-auto">
               <div className="flex flex-col items-center gap-4 text-center">
                   <div className="p-5 rounded-full bg-card border border-border">
