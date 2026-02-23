@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/#quienes-somos", label: "Quiénes Somos" },
   { href: "/#servicios", label: "Servicios" },
-  { href: "/paseos", label: "Paseos" },
   { href: "/#galeria", label: "Galería" },
   { href: "/#contacto", label: "Contacto" },
 ];
@@ -64,7 +63,10 @@ export default function Header() {
                 </Link>
               ))}
             </nav>
-            <div className="hidden md:block ml-6">
+            <div className="hidden md:flex items-center gap-2 ml-6">
+                 <Button asChild variant="outline" size="sm" className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-transform hover:scale-110">
+                    <Link href="/paseos">Paseos</Link>
+                </Button>
                 <Button asChild size="sm" className="rounded-full animate-pulse-cta transition-transform hover:scale-110">
                     <Link href="/casate-en-casa">Cásate en Casa</Link>
                 </Button>
@@ -95,9 +97,14 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="mt-4 rounded-full transition-transform hover:scale-110" size="lg">
-                <Link href="/casate-en-casa" onClick={() => setIsMenuOpen(false)}>Cásate en Casa</Link>
-            </Button>
+             <div className="flex flex-col items-center gap-4 mt-4">
+                 <Button asChild variant="outline" size="lg" className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-transform hover:scale-110">
+                    <Link href="/paseos" onClick={() => setIsMenuOpen(false)}>Paseos</Link>
+                </Button>
+                <Button asChild className="rounded-full transition-transform hover:scale-110" size="lg">
+                    <Link href="/casate-en-casa" onClick={() => setIsMenuOpen(false)}>Cásate en Casa</Link>
+                </Button>
+            </div>
           </nav>
         </div>
       )}
