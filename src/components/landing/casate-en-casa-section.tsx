@@ -37,7 +37,7 @@ export default function CasateEnCasaSection() {
     }, []);
 
     return (
-        <section ref={ref} id="casate-en-casa" className="py-20 md:py-28 bg-background overflow-hidden">
+        <section ref={ref} id="casate-en-casa" className="py-8 bg-background overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className={cn(
                     "relative rounded-lg overflow-hidden shadow-2xl group transition-all duration-1000 ease-out flex items-center justify-center text-center text-white min-h-[60vh] p-8",

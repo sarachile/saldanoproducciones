@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
@@ -35,7 +36,7 @@ export default function ProductsHeader() {
   return (
     <section 
       ref={ref}
-      className="py-20 md:py-28 bg-background"
+      className="pt-20 md:pt-28 pb-8 bg-background"
     >
       <div className="container mx-auto px-4">
         <div 
