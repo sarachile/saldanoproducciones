@@ -41,7 +41,7 @@ export default function BurgerCartSection() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                      <div className={cn(
-                        "relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl group transition-all duration-1000 ease-out",
+                        "relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl group transition-all duration-1000 ease-out border-4 border-white/10",
                         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                      )}>
                         <Image

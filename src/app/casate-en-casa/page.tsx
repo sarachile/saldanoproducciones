@@ -94,7 +94,7 @@ export default function CasateEnCasaPage() {
                 <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Coordinación profesional durante todo el evento.</li>
               </ul>
             </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl group">
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl group border-4 border-white/10">
                  <Image
                     src="/fotoseventos/c3.png"
                     alt="Boda íntima en casa"
@@ -135,7 +135,7 @@ export default function CasateEnCasaPage() {
                 <CarouselContent>
                   {dancerImages.map((src, index) => (
                     <CarouselItem key={index}>
-                      <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-2xl">
+                      <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10">
                         <Image
                           src={src}
                           alt={`Show de bailarines ${index + 1}`}

@@ -16,7 +16,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl">
+            <div className="aspect-[4/5] relative rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
               <video
                 src="/final.mp4"
                 autoPlay
