@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -65,7 +64,7 @@ export default function Header() {
               ))}
             </nav>
             <div className="hidden md:block ml-6">
-                <Button asChild size="sm" className="bg-primary/10 text-primary hover:bg-primary/20 border border-primary/20">
+                <Button asChild size="sm" className="animate-pulse-cta shadow-lg shadow-primary/20">
                     <Link href="/casate-en-casa">Cásate en Casa</Link>
                 </Button>
             </div>
