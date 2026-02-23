@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "#quienes-somos", label: "Quiénes Somos" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#galeria", label: "Galería" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#quienes-somos", label: "Quiénes Somos" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#galeria", label: "Galería" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 const Logo = () => (
