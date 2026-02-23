@@ -64,7 +64,7 @@ export default function Header() {
               ))}
             </nav>
             <div className="hidden md:block ml-6">
-                <Button asChild size="sm" className="animate-pulse-cta">
+                <Button asChild size="sm" className="rounded-full animate-pulse-cta transition-transform hover:scale-110">
                     <Link href="/casate-en-casa">Cásate en Casa</Link>
                 </Button>
             </div>
@@ -94,7 +94,7 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="mt-4" size="lg">
+            <Button asChild className="mt-4 rounded-full transition-transform hover:scale-110" size="lg">
                 <Link href="/casate-en-casa" onClick={() => setIsMenuOpen(false)}>Cásate en Casa</Link>
             </Button>
           </nav>
