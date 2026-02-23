@@ -19,7 +19,7 @@ const galleryImages = Array.from({ length: 11 }, (_, i) => `/p${i + 1}.jpeg`);
 
 export default function PaseosPage() {
     const plugin = React.useRef(
-        Autoplay({ delay: 3000, stopOnInteraction: true })
+        Autoplay({ delay: 2000, stopOnInteraction: true })
     );
 
   return (
@@ -151,8 +151,6 @@ export default function PaseosPage() {
             plugins={[plugin.current]}
             className="w-full max-w-6xl mx-auto"
             opts={{ loop: true, align: "start" }}
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
           >
             <CarouselContent>
               {galleryImages.map((src, index) => (
