@@ -32,7 +32,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="absolute bottom-10 z-20">
-        <Link href="#destacados" aria-label="Scroll down">
+        <Link href="#servicios" aria-label="Scroll down">
           <ArrowDown className="h-8 w-8 text-white/70 animate-bounce" />
         </Link>
       </div>
