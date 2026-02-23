@@ -35,7 +35,7 @@ export default function PaseosPage() {
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
-            Producción de Paseos Escolares y empresas
+            Producción de Paseos Escolares y Empresas
           </h1>
           <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
             Creamos jornadas inolvidables de entretención y naturaleza en nuestro centro de eventos.
