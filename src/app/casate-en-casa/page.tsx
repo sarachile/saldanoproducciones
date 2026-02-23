@@ -4,6 +4,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Check, Instagram, Phone, Mail } from 'lucide-react';
 import { CasateEnCasaLogo } from '@/components/icons/casate-en-casa-logo';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const TikTokIconSVG = () => (
     <svg className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -19,6 +26,12 @@ const galleryImages = [
   "/fotoseventos/c.2.5.png",
   "/fotoseventos/c.2.6.png",
   "/fotoseventos/c.2.7.png",
+];
+
+const dancerImages = [
+    "/bailarines1.jpeg",
+    "/bailarines2.jpeg",
+    "/bailarines3.jpeg",
 ];
 
 export default function CasateEnCasaPage() {
@@ -95,54 +108,45 @@ export default function CasateEnCasaPage() {
         </div>
       </section>
       
-      {/* Dinner Show Section */}
+      {/* Staff y Entretenimiento Section */}
       <section className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-2">
-                DINNER SHOW
-                </h2>
-                <p className="text-xl md:text-2xl font-body italic text-primary/90 mb-6">
-                Una experiencia inolvidable
-                </p>
-                <p className="text-lg text-foreground/90 mb-8 text-balance">
-                Creamos un espacio único para que disfrutes de un show de bailarines profesionales mientras degustas de nuestra alta cocina.
-                </p>
-                <ul className="space-y-4 text-lg">
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Bailarines profesionales</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Show personalizado</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Gastronomía de primer nivel</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Producción completa</li>
-                </ul>
+              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
+                Staff y Entretenimiento de Primer Nivel
+              </h2>
+              <p className="text-lg text-foreground/90 mb-8 text-balance">
+                Para que tu única preocupación sea disfrutar, ponemos a tu disposición un equipo de profesionales y shows que llevarán tu evento al siguiente nivel.
+              </p>
+              <ul className="space-y-4 text-lg">
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Garzones y servicio de coctelería profesional.</li>
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Bartenders expertos en mixología.</li>
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Shows de bailarines profesionales para animar la celebración.</li>
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Asistentes y personal de apoyo logístico.</li>
+              </ul>
             </div>
-            <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
-                <div className="relative col-span-2 aspect-video rounded-lg overflow-hidden shadow-2xl group">
-                    <Image
-                    src="/bailarines1.jpeg"
-                    alt="Show de bailarines profesionales en evento"
-                    fill
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    />
-                </div>
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl group">
-                    <Image
-                    src="/bailarines2.jpeg"
-                    alt="Pareja de bailarines en show"
-                    fill
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    />
-                </div>
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl group">
-                    <Image
-                    src="/bailarines3.jpeg"
-                    alt="Bailarines en acción durante cena"
-                    fill
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    />
-                </div>
+            <div className="order-1 md:order-2">
+              <Carousel className="w-full max-w-lg mx-auto" opts={{ loop: true }}>
+                <CarouselContent>
+                  {dancerImages.map((src, index) => (
+                    <CarouselItem key={index}>
+                      <div className="relative aspect-video overflow-hidden rounded-lg shadow-2xl">
+                        <Image
+                          src={src}
+                          alt={`Show de bailarines ${index + 1}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="hidden sm:flex left-[-20px]" />
+                <CarouselNext className="hidden sm:flex right-[-20px]" />
+              </Carousel>
             </div>
-            </div>
+          </div>
         </div>
       </section>
 
@@ -199,5 +203,3 @@ export default function CasateEnCasaPage() {
     </div>
   );
 }
-
-    
