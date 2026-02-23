@@ -64,7 +64,7 @@ export default function Header() {
               ))}
             </nav>
             <div className="hidden md:flex items-center gap-2 ml-6">
-                 <Button asChild variant="outline" size="sm" className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-transform hover:scale-110">
+                 <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/paseos">Paseos</Link>
                 </Button>
                 <Button asChild size="sm" className="rounded-full animate-pulse-cta transition-transform hover:scale-110">
@@ -98,7 +98,7 @@ export default function Header() {
               </Link>
             ))}
              <div className="flex flex-col items-center gap-4 mt-4">
-                 <Button asChild variant="outline" size="lg" className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-transform hover:scale-110">
+                 <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/paseos" onClick={() => setIsMenuOpen(false)}>Paseos</Link>
                 </Button>
                 <Button asChild className="rounded-full transition-transform hover:scale-110" size="lg">
