@@ -93,8 +93,14 @@ export default {
           to: { transform: 'translateX(-50%)' },
         },
         'pulse-cta': {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.05)' },
+          '0%, 100%': {
+            transform: 'scale(1)',
+            boxShadow: '0 10px 15px -3px hsl(var(--primary) / 0.2)'
+          },
+          '50%': {
+            transform: 'scale(1.05)',
+            boxShadow: '0 10px 25px -3px hsl(var(--primary) / 0.4)'
+          },
         },
       },
       animation: {

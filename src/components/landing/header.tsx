@@ -64,7 +64,7 @@ export default function Header() {
               ))}
             </nav>
             <div className="hidden md:block ml-6">
-                <Button asChild size="sm" className="animate-pulse-cta shadow-lg shadow-primary/20">
+                <Button asChild size="sm" className="animate-pulse-cta">
                     <Link href="/casate-en-casa">Cásate en Casa</Link>
                 </Button>
             </div>
