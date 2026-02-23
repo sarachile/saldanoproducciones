@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Check, Instagram, Phone, Mail } from 'lucide-react';
+import { CasateEnCasaLogo } from '@/components/icons/casate-en-casa-logo';
 
 const TikTokIconSVG = () => (
     <svg className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -35,14 +36,9 @@ export default function CasateEnCasaPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <Image
-            src="/casateencasa.jpeg"
-            alt="Cásate en Casa Logo"
-            width={200}
-            height={75}
-            className="object-contain h-auto mb-6 mix-blend-screen drop-shadow-lg"
-            priority
-          />
+          <div className="mb-6 drop-shadow-lg">
+            <CasateEnCasaLogo className="h-32 w-32 text-white" />
+          </div>
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white mb-4 text-balance">
             Tu hogar, el mejor centro de eventos.
           </h1>

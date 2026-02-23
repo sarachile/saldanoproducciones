@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
+import { CasateEnCasaLogo } from '../icons/casate-en-casa-logo';
 
 export default function CasateEnCasaSection() {
     const [isVisible, setIsVisible] = useState(false);
@@ -56,13 +57,9 @@ export default function CasateEnCasaSection() {
                         "relative z-20 flex flex-col items-center transition-all duration-1000 ease-out delay-200",
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
-                         <Image
-                            src="/casateencasa.jpeg"
-                            alt="Cásate en Casa Logo"
-                            width={150}
-                            height={56}
-                            className="object-contain h-auto mb-6 mix-blend-screen drop-shadow-lg"
-                        />
+                         <div className="mb-6 drop-shadow-lg">
+                           <CasateEnCasaLogo className="h-28 w-28 text-white" />
+                         </div>
                         <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-4 text-balance drop-shadow-md">
                             Tu Hogar, el Mejor Escenario
                         </h2>
