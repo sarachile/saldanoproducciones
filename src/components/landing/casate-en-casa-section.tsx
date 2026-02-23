@@ -57,8 +57,9 @@ export default function CasateEnCasaSection() {
                         "relative z-20 flex flex-col items-center transition-all duration-1000 ease-out delay-200",
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
-                         <div className="mb-6 drop-shadow-lg">
-                           <CasateEnCasaLogo className="h-28 w-28 text-white" />
+                         <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-2">
+                           <CasateEnCasaLogo className="h-20 w-20 text-white" />
+                           <span className="text-2xl font-headline font-bold text-white tracking-wider">Cásate en Casa</span>
                          </div>
                         <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-4 text-balance drop-shadow-md">
                             Tu Hogar, el Mejor Escenario

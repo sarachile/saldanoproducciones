@@ -36,12 +36,13 @@ export default function CasateEnCasaPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <div className="mb-6 drop-shadow-lg">
-            <CasateEnCasaLogo className="h-32 w-32 text-white" />
+          <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-4">
+            <CasateEnCasaLogo className="h-28 w-28 text-white" />
+            <h1 className="text-4xl font-headline font-bold text-white tracking-wider">Cásate en Casa</h1>
           </div>
-          <h1 className="text-4xl md:text-6xl font-headline font-bold text-white mb-4 text-balance">
+          <h2 className="text-2xl md:text-4xl font-headline font-bold text-white mb-4 text-balance">
             Tu hogar, el mejor centro de eventos.
-          </h1>
+          </h2>
           <p className="max-w-3xl text-xl text-white/90 mb-8 text-balance">
             Transformamos tu espacio en el escenario perfecto para el día más importante de tu vida.
           </p>
