@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -51,26 +52,33 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Logo />
-          <nav className="hidden md:flex gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+          <div className="flex items-center">
+            <nav className="hidden md:flex gap-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+            <div className="hidden md:block ml-6">
+                <Button asChild size="sm" className="bg-primary/10 text-primary hover:bg-primary/20 border border-primary/20">
+                    <Link href="/casate-en-casa">Cásate en Casa</Link>
+                </Button>
+            </div>
+            <div className="md:hidden ml-4">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
               >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -87,6 +95,9 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Button asChild className="mt-4" size="lg">
+                <Link href="/casate-en-casa" onClick={() => setIsMenuOpen(false)}>Cásate en Casa</Link>
+            </Button>
           </nav>
         </div>
       )}

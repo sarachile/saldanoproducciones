@@ -4,7 +4,7 @@ import Services from '@/components/landing/services';
 import Gallery from '@/components/landing/gallery';
 import ContactSection from '@/components/landing/contact-section';
 import CommercialPhrase from '@/components/landing/commercial-phrase';
-import BrandsSection from '@/components/landing/brands-section';
+import CasateEnCasaSection from '@/components/landing/casate-en-casa-section';
 import ClientsMarquee from '@/components/landing/clients-marquee';
 import BurgerCartSection from '@/components/landing/burger-cart-section';
 
@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <CommercialPhrase />
       <Services />
-      <BrandsSection />
+      <CasateEnCasaSection />
       <BurgerCartSection />
       <ClientsMarquee />
       <Gallery />
