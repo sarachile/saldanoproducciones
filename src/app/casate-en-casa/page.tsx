@@ -1,4 +1,6 @@
+"use client";
 
+import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -11,6 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const TikTokIconSVG = () => (
     <svg className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -35,6 +38,10 @@ const dancerImages = [
 ];
 
 export default function CasateEnCasaPage() {
+    const plugin = React.useRef(
+        Autoplay({ delay: 2500, stopOnInteraction: true })
+    );
+
   return (
     <div className="bg-background text-foreground">
       {/* Hero Section */}
@@ -127,16 +134,22 @@ export default function CasateEnCasaPage() {
               </ul>
             </div>
             <div className="order-1 md:order-2">
-              <Carousel className="w-full max-w-lg mx-auto" opts={{ loop: true }}>
+              <Carousel
+                plugins={[plugin.current]}
+                className="w-full max-w-lg mx-auto"
+                opts={{ loop: true }}
+                onMouseEnter={plugin.current.stop}
+                onMouseLeave={plugin.current.reset}
+              >
                 <CarouselContent>
                   {dancerImages.map((src, index) => (
                     <CarouselItem key={index}>
-                      <div className="relative aspect-video overflow-hidden rounded-lg shadow-2xl">
+                      <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-2xl">
                         <Image
                           src={src}
                           alt={`Show de bailarines ${index + 1}`}
                           fill
-                          className="object-cover"
+                          className="object-cover object-top"
                         />
                       </div>
                     </CarouselItem>
