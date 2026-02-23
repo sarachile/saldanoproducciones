@@ -14,13 +14,13 @@ export default function Home() {
     <>
       <HeroSection />
       <CommercialPhrase />
+      <AboutUs />
       <Services />
       <CasateEnCasaSection />
       <BurgerCartSection />
       <PaseosSection />
       <ClientsMarquee />
       <Gallery />
-      <AboutUs />
       <ContactSection />
     </>
   );
