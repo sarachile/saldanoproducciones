@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Check, Instagram, Phone, Mail } from 'lucide-react';
+import { Check, Instagram, Phone, Mail, Sofa, LampDesk, Paintbrush, Music } from 'lucide-react';
 import { CasateEnCasaLogo } from '@/components/icons/casate-en-casa-logo';
 import {
   Carousel,
@@ -21,15 +21,6 @@ const TikTokIconSVG = () => (
         <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5"></path>
     </svg>
 );
-
-const galleryImages = [
-  "/fotoseventos/c.2.2.png",
-  "/fotoseventos/c.2.3.png",
-  "/fotoseventos/c.2.4.png",
-  "/fotoseventos/c.2.5.png",
-  "/fotoseventos/c.2.6.png",
-  "/fotoseventos/c.2.7.png",
-];
 
 const dancerImages = [
     "/bailarines1.jpeg",
@@ -163,7 +154,7 @@ export default function CasateEnCasaPage() {
         </div>
       </section>
 
-      {/* Gallery Section */}
+      {/* Gallery Placeholder Section */}
       <section className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -171,21 +162,34 @@ export default function CasateEnCasaPage() {
                 Transformaciones Memorables
             </h2>
             <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Mira cómo convertimos espacios cotidianos en lugares mágicos.
+                Próximamente: Mira cómo convertimos espacios cotidianos en lugares mágicos. ¡Estamos preparando nuestra galería!
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {galleryImages.map((src, index) => (
-              <div key={index} className="group relative aspect-video overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src={src}
-                  alt={`Galería Cásate en Casa ${index + 1}`}
-                  fill
-                  className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
-                />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 rounded-full bg-card border border-border">
+                    <Sofa className="h-12 w-12" />
+                  </div>
+                  <span className="text-foreground/80 font-semibold">Mobiliario</span>
               </div>
-            ))}
+              <div className="flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 rounded-full bg-card border border-border">
+                    <LampDesk className="h-12 w-12" />
+                  </div>
+                  <span className="text-foreground/80 font-semibold">Iluminación</span>
+              </div>
+              <div className="flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 rounded-full bg-card border border-border">
+                    <Paintbrush className="h-12 w-12" />
+                  </div>
+                  <span className="text-foreground/80 font-semibold">Decoración</span>
+              </div>
+               <div className="flex flex-col items-center gap-4 text-center">
+                  <div className="p-5 rounded-full bg-card border border-border">
+                    <Music className="h-12 w-12" />
+                  </div>
+                  <span className="text-foreground/80 font-semibold">Ambiente</span>
+              </div>
           </div>
         </div>
       </section>
