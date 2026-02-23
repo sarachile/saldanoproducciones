@@ -95,8 +95,59 @@ export default function CasateEnCasaPage() {
         </div>
       </section>
       
-      {/* Gallery Section */}
+      {/* Dinner Show Section */}
       <section className="py-20 md:py-28 bg-card">
+        <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1">
+                <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-2">
+                DINNER SHOW
+                </h2>
+                <p className="text-xl md:text-2xl font-body italic text-primary/90 mb-6">
+                Una experiencia inolvidable
+                </p>
+                <p className="text-lg text-foreground/90 mb-8 text-balance">
+                Creamos un espacio único para que disfrutes de un show de bailarines profesionales mientras degustas de nuestra alta cocina.
+                </p>
+                <ul className="space-y-4 text-lg">
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Bailarines profesionales</li>
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Show personalizado</li>
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Gastronomía de primer nivel</li>
+                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Producción completa</li>
+                </ul>
+            </div>
+            <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
+                <div className="relative col-span-2 aspect-video rounded-lg overflow-hidden shadow-2xl group">
+                    <Image
+                    src="/bailarines1.jpeg"
+                    alt="Show de bailarines profesionales en evento"
+                    fill
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    />
+                </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl group">
+                    <Image
+                    src="/bailarines2.jpeg"
+                    alt="Pareja de bailarines en show"
+                    fill
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    />
+                </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl group">
+                    <Image
+                    src="/bailarines3.jpeg"
+                    alt="Bailarines en acción durante cena"
+                    fill
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    />
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
@@ -123,7 +174,7 @@ export default function CasateEnCasaPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-20 md:py-28 bg-card">
           <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
                   ¿Listo para tu evento soñado en casa?
@@ -148,3 +199,5 @@ export default function CasateEnCasaPage() {
     </div>
   );
 }
+
+    
