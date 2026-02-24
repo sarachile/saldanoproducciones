@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Check, Mail, Phone, Music, Gift, Pizza } from 'lucide-react';
+import { Check, Mail, Phone, Music, Gift, Pizza, Download } from 'lucide-react';
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -125,10 +125,18 @@ export default function SantoGustoPage() {
                     alt="Menú de productos Santo Gusto"
                     width={1200}
                     height={800}
-                    className="rounded-xl shadow-2xl w-full max-w-5xl h-auto"
+                    className="rounded-xl shadow-2xl w-full max-w-4xl h-auto"
                 />
             </div>
-             <div className="text-center mt-12 flex justify-center items-center gap-4">
+            <div className="mt-12 text-center">
+                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 animate-pulse-cta px-8 py-6 text-lg rounded-full">
+                    <a href="/menu-santo-gusto.pdf" download>
+                        <Download className="mr-2 h-5 w-5" />
+                        Descargar el Menú
+                    </a>
+                </Button>
+            </div>
+             <div className="text-center mt-8 flex justify-center items-center gap-4">
                 <Pizza className="h-6 w-6 text-primary" />
                 <p className="text-foreground/80 text-lg">
                     ¡Pregunta por nuestras <span className="font-bold text-primary/90">Pizzas Artesanales</span> y <span className="font-bold text-primary/90">Empanadas de Horno</span>!
