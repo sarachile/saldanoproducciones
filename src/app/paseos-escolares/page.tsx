@@ -55,7 +55,7 @@ export default function PaseosEscolaresPage() {
                 Un Lugar Único para Aprender y Jugar
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-6 text-balance">
-                Contamos con un increíble centro de eventos equipado con todo lo necesario para que tu paseo de curso sea un éxito. Disfruta de nuestras amplias áreas verdes, piscina, y salones en un ambiente seguro y privado.
+                Contamos con una increíble parcela para eventos, totalmente equipada con todo lo necesario para que tu paseo de curso sea un éxito. Disfruta de nuestras amplias áreas verdes, piscina y salones en un ambiente seguro y privado.
               </p>
               <div className="flex justify-center items-center gap-2 mb-12">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -125,7 +125,7 @@ export default function PaseosEscolaresPage() {
                 Nuestros Paseos en Imágenes
             </h2>
             <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Revive los mejores momentos de nuestros eventos en el centro de eventos.
+                Revive los mejores momentos de nuestros paseos en nuestra parcela.
             </p>
           </div>
           <Carousel
