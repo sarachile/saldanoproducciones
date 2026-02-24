@@ -125,7 +125,7 @@ export default function SantoGustoPage() {
                     alt="Menú de productos Santo Gusto"
                     width={1200}
                     height={800}
-                    className="rounded-xl shadow-2xl w-full max-w-4xl h-auto"
+                    className="rounded-xl shadow-2xl w-full max-w-xl h-auto"
                 />
             </div>
              <div className="text-center mt-8 flex justify-center items-center gap-4">
