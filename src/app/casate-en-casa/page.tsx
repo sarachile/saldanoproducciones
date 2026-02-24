@@ -52,8 +52,44 @@ export default function CasateEnCasaPage() {
         return () => clearInterval(timer);
     }, []);
 
+    // Intersection Observer for animations
+    const descSectionRef = React.useRef<HTMLDivElement>(null);
+    const staffSectionRef = React.useRef<HTMLDivElement>(null);
+    const [isDescVisible, setDescVisible] = React.useState(false);
+    const [isStaffVisible, setStaffVisible] = React.useState(false);
+
+    React.useEffect(() => {
+        const observerOptions = {
+            threshold: 0.2,
+        };
+
+        const createObserver = (setter: React.Dispatch<React.SetStateAction<boolean>>) => {
+            return new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    setter(true);
+                    // No need to disconnect, TS complains about observer not being defined.
+                }
+            }, observerOptions);
+        };
+
+        const descObserver = createObserver(setDescVisible);
+        const staffObserver = createObserver(setStaffVisible);
+        
+        const currentDescRef = descSectionRef.current;
+        if (currentDescRef) descObserver.observe(currentDescRef);
+        
+        const currentStaffRef = staffSectionRef.current;
+        if (currentStaffRef) staffObserver.observe(currentStaffRef);
+
+        return () => {
+            if (currentDescRef) descObserver.disconnect();
+            if (currentStaffRef) staffObserver.disconnect();
+        };
+    }, []);
+
+
   return (
-    <div className="bg-background text-foreground">
+    <div className="bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-center text-white">
         <video
@@ -93,10 +129,13 @@ export default function CasateEnCasaPage() {
       </section>
 
       {/* Description Section */}
-      <section className="py-20 md:py-28">
+      <section ref={descSectionRef} className="py-20 md:py-28">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className={cn(
+                "transition-all duration-1000 ease-out",
+                isDescVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+            )}>
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
                 La Magia de Celebrar en Casa
               </h2>
@@ -113,7 +152,10 @@ export default function CasateEnCasaPage() {
                 <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Coordinación profesional durante todo el evento.</li>
               </ul>
             </div>
-            <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
+            <div className={cn(
+                "relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl border-4 border-white/10 transition-all duration-1000 ease-out delay-200",
+                isDescVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+            )}>
                  {descriptionImages.map((src, index) => (
                     <Image
                         key={index}
@@ -134,10 +176,13 @@ export default function CasateEnCasaPage() {
       </section>
       
       {/* Staff y Entretenimiento Section */}
-      <section className="py-20 md:py-28 bg-card">
+      <section ref={staffSectionRef} className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1">
+            <div className={cn(
+                "order-2 md:order-2 transition-all duration-1000 ease-out delay-200",
+                isStaffVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+            )}>
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
                 Staff y Entretenimiento de Primer Nivel
               </h2>
@@ -151,7 +196,10 @@ export default function CasateEnCasaPage() {
                 <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Asistentes y personal de apoyo logístico.</li>
               </ul>
             </div>
-            <div className="order-1 md:order-2">
+            <div className={cn(
+                "order-1 md:order-1 transition-all duration-1000 ease-out",
+                isStaffVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+            )}>
               <Carousel
                 plugins={[plugin.current]}
                 className="w-full max-w-lg mx-auto"
