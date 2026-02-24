@@ -188,9 +188,14 @@ export default function CasateEnCasaPage() {
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
                 Transformaciones Memorables
             </h2>
-            <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Próximamente: Mira cómo convertimos espacios cotidianos en lugares mágicos. ¡Estamos preparando nuestra galería!
+            <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90 mb-8">
+                Mira cómo convertimos espacios cotidianos en lugares mágicos. ¡Te invitamos a seguir nuestras últimas producciones en Instagram!
             </p>
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <a href="https://www.instagram.com/casateencasa.cl" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="mr-2 h-5 w-5" /> Ver en Instagram
+                </a>
+            </Button>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-4xl mx-auto">
               <div className="flex flex-col items-center gap-4 text-center">
