@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -74,6 +73,18 @@ export default function CasateEnCasaSection() {
                             </Link>
                         </Button>
                     </div>
+
+                    {/* Promo Bubble */}
+                    <div className={cn(
+                        "absolute top-4 -right-4 md:top-8 md:-right-2 z-30 bg-primary text-primary-foreground rounded-full p-3 text-center shadow-2xl flex flex-col items-center justify-center h-32 w-32 transform -rotate-12 transition-all duration-1000 ease-out delay-300",
+                         "animate-pulse-cta",
+                        isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    )}>
+                        <span className="font-headline font-bold text-md uppercase leading-none block">¡Oferta!</span>
+                        <span className="font-headline text-3xl font-bold block my-1 tracking-tighter">$29.990</span>
+                        <span className="text-xs leading-tight block font-semibold">por persona</span>
+                    </div>
+
                 </div>
             </div>
         </section>
