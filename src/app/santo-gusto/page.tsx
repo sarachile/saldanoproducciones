@@ -38,15 +38,6 @@ const useAnimateOnScroll = (threshold = 0.2) => {
 };
 
 
-const menuItems = [
-    { name: "Completos", image: "https://picsum.photos/seed/completo/600/600", color: "bg-sky-500", hint: "hot dog" },
-    { name: "Churrascos", image: "https://picsum.photos/seed/churrasco/600/600", color: "bg-green-500", hint: "steak sandwich" },
-    { name: "Mechada", image: "https://picsum.photos/seed/mechada/600/600", color: "bg-lime-400", hint: "pulled pork" },
-    { name: "Fajitas", image: "https://picsum.photos/seed/fajita/600/600", color: "bg-orange-500", hint: "fajita wrap" },
-    { name: "Hamburguesas", image: "https://picsum.photos/seed/hamburguesa/600/600", color: "bg-fuchsia-500", hint: "cheeseburger" },
-    { name: "Papas Fritas", image: "https://picsum.photos/seed/papas/600/600", color: "bg-yellow-400", hint: "french fries" },
-];
-
 export default function SantoGustoPage() {
     const hero = useAnimateOnScroll();
     const about = useAnimateOnScroll();
@@ -125,18 +116,17 @@ export default function SantoGustoPage() {
                     Sabor que conquista en cada bocado.
                 </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
-                {menuItems.map((item, index) => (
-                    <div key={item.name} className={cn(
-                        "relative rounded-xl overflow-hidden shadow-2xl group aspect-square flex flex-col justify-end p-6 text-white font-headline font-bold transition-all duration-700 ease-out",
-                        item.color,
-                        menu.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                    )} style={{ transitionDelay: `${index * 100}ms` }}>
-                        <Image src={item.image} alt={item.name} fill className="object-cover transition-transform duration-500 group-hover:scale-110" data-ai-hint={item.hint} />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                        <h3 className="relative text-2xl md:text-3xl z-10 drop-shadow-md">{item.name}</h3>
-                    </div>
-                ))}
+            <div className={cn(
+                "flex justify-center transition-all duration-1000 ease-out delay-200",
+                menu.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
+            )}>
+                <Image 
+                    src="/santo-gusto-menu.png"
+                    alt="Menú de productos Santo Gusto"
+                    width={1200}
+                    height={800}
+                    className="rounded-xl shadow-2xl w-full max-w-5xl h-auto"
+                />
             </div>
              <div className="text-center mt-12 flex justify-center items-center gap-4">
                 <Pizza className="h-6 w-6 text-primary" />
