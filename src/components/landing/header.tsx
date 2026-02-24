@@ -79,10 +79,10 @@ export default function Header() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
                         <DropdownMenuItem asChild>
-                        <Link href="/paseos-escolares">Paseos Escolares</Link>
+                        <Link href="/paseos-escolares">Paseos de Curso</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                        <Link href="/paseos-empresa">Paseos de Empresa</Link>
+                        <Link href="/paseos-empresa">Eventos de Empresa</Link>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
@@ -129,10 +129,10 @@ export default function Header() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
                         <DropdownMenuItem asChild>
-                            <Link href="/paseos-escolares" onClick={() => setIsMenuOpen(false)}>Paseos Escolares</Link>
+                            <Link href="/paseos-escolares" onClick={() => setIsMenuOpen(false)}>Paseos de Curso</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                            <Link href="/paseos-empresa" onClick={() => setIsMenuOpen(false)}>Paseos de Empresa</Link>
+                            <Link href="/paseos-empresa" onClick={() => setIsMenuOpen(false)}>Eventos de Empresa</Link>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>

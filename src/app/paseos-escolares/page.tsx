@@ -27,7 +27,7 @@ export default function PaseosEscolaresPage() {
       <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
         <Image
           src="/p1.jpeg"
-          alt="Paseos escolares"
+          alt="Paseos de curso"
           fill
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -35,14 +35,14 @@ export default function PaseosEscolaresPage() {
         <div className="relative z-20 px-4 flex flex-col items-center">
           <School className="h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
-            Paseos Escolares
+            Paseos de Curso
           </h1>
           <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
             Jornadas de entretención, aprendizaje y naturaleza para cursos y colegios.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg">
             <Link href="#contacto">
-                Cotiza tu Paseo Escolar
+                Cotiza tu Paseo de Curso
             </Link>
           </Button>
         </div>
@@ -139,7 +139,7 @@ export default function PaseosEscolaresPage() {
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group">
                     <Image
                       src={src}
-                      alt={`Galería de paseo escolar ${index + 1}`}
+                      alt={`Galería de paseo de curso ${index + 1}`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -157,7 +157,7 @@ export default function PaseosEscolaresPage() {
       <section id="contacto" className="py-20 md:py-28 bg-card">
           <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
-                  ¿Listos para un paseo escolar inolvidable?
+                  ¿Listos para un paseo de curso inolvidable?
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-8">
                   Contáctanos para recibir una cotización personalizada. Organizaremos un paseo que tu curso recordará por siempre.

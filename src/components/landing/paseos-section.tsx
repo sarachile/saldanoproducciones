@@ -62,18 +62,18 @@ export default function PaseosSection() {
                             Desconexión y Entretención
                         </h2>
                         <p className="max-w-2xl text-lg md:text-xl text-white/90 mb-8 text-balance drop-shadow-sm">
-                            Organizamos jornadas inolvidables para empresas y colegios en nuestro centro de eventos.
+                            Organizamos jornadas inolvidables para empresas y colegios en nuestra parcela de eventos.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105">
+                            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105 border-white text-white hover:bg-white hover:text-primary-foreground">
                                 <Link href="/paseos-escolares">
-                                    <span>Paseos Escolares</span>
+                                    <span>Paseos de Curso</span>
                                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                                 </Link>
                             </Button>
-                            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105 border-white text-white hover:bg-white hover:text-primary-foreground">
+                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105">
                                 <Link href="/paseos-empresa">
-                                    <span>Paseos de Empresa</span>
+                                    <span>Eventos de Empresas</span>
                                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                                 </Link>
                             </Button>
