@@ -63,8 +63,8 @@ export default function SantoGustoPage() {
             <Image
                 src="/santogusto.png"
                 alt="Santo Gusto Logo"
-                width={240}
-                height={89}
+                width={160}
+                height={59}
                 className="object-contain h-auto mix-blend-screen"
             />
           </div>
@@ -121,7 +121,7 @@ export default function SantoGustoPage() {
                 menu.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
             )}>
                 <Image 
-                    src="/productoscarrito.jpg"
+                    src="/productoscarrito.jpg?v=2"
                     alt="Menú de productos Santo Gusto"
                     width={1200}
                     height={800}
