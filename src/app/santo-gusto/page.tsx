@@ -65,7 +65,7 @@ export default function SantoGustoPage() {
                 alt="Santo Gusto Logo"
                 width={160}
                 height={59}
-                className="object-contain h-auto mix-blend-screen"
+                className="object-contain h-auto"
             />
           </div>
           <h1 className="text-3xl md:text-5xl font-headline font-bold text-white mb-4 text-balance drop-shadow-md">
@@ -98,8 +98,8 @@ export default function SantoGustoPage() {
               </p>
             </div>
             <div className={cn("grid grid-cols-2 gap-4 transition-all duration-1000 ease-out delay-200", about.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90")}>
-               <Image src="https://picsum.photos/seed/truck1/400/400" alt="Food Truck Santo Gusto 1" width={400} height={400} className="rounded-xl shadow-lg object-cover aspect-square" data-ai-hint="food truck" />
-               <Image src="https://picsum.photos/seed/truck2/400/400" alt="Food Truck Santo Gusto 2" width={400} height={400} className="rounded-xl shadow-lg object-cover aspect-square mt-8" data-ai-hint="mobile catering" />
+               <Image src="/carrito1.jpeg" alt="Food truck Santo Gusto en un evento" width={400} height={400} className="rounded-xl shadow-lg object-cover aspect-square" data-ai-hint="food truck" />
+               <Image src="/carrito3.jpeg" alt="Detalle del carrito de Santo Gusto" width={400} height={400} className="rounded-xl shadow-lg object-cover aspect-square mt-8" data-ai-hint="mobile catering" />
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function SantoGustoPage() {
                     alt="Menú de productos Santo Gusto"
                     width={1200}
                     height={800}
-                    className="rounded-xl shadow-2xl w-full max-w-xl h-auto"
+                    className="rounded-xl shadow-2xl w-full max-w-md h-auto"
                 />
             </div>
              <div className="text-center mt-8 flex justify-center items-center gap-4">
