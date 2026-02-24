@@ -129,18 +129,18 @@ export default function CasateEnCasaPage() {
         </div>
         {/* Promo Bubble */}
         <Link
-            href="https://wa.me/56993382819?text=quiero%20cotizar%20la%20oferta%20de%20%2429.990%20por%20persona"
+            href="https://wa.me/56993382819?text=Hola,%20quiero%20cotizar%20un%20evento%20de%20C%C3%A1sate%20en%20Casa."
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Cotizar oferta por WhatsApp"
+            aria-label="Cotizar por WhatsApp"
             className={cn(
             "absolute top-4 -right-4 md:top-8 md:-right-2 z-30 bg-primary text-primary-foreground rounded-full p-3 text-center shadow-2xl flex flex-col items-center justify-center h-32 w-32 transform -rotate-12 transition-all duration-1000 ease-out delay-300",
                 "animate-pulse-cta",
             isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
         )}>
-            <span className="font-headline font-bold text-sm uppercase leading-tight block">Oferta por tiempo limitado</span>
-            <span className="font-headline text-3xl font-bold block tracking-tighter">$29.990</span>
-            <span className="text-xs leading-tight block font-semibold">por persona</span>
+            <span className="font-headline font-bold text-sm uppercase leading-tight block">Cupos Limitados</span>
+            <span className="font-headline text-3xl font-bold block tracking-tighter">¡Cotiza Hoy!</span>
+            <span className="text-xs leading-tight block font-semibold">y asegura tu fecha</span>
         </Link>
       </section>
 
