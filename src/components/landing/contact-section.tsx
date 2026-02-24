@@ -28,7 +28,7 @@ export default function ContactSection() {
             <div className="space-y-6">
               <ContactInfo icon={Mail} text="saldanoproduccioneseirl@gmail.com" href="mailto:saldanoproduccioneseirl@gmail.com" />
               <ContactInfo icon={Phone} text="+56 9 9338 2819" href="tel:+56993382819" />
-              <ContactInfo icon={MapPin} text="Parcela de eventos a 15 minutos de Maipú" />
+              <ContactInfo icon={MapPin} text="Servicios en toda la Región Metropolitana" />
             </div>
             <div className="text-foreground text-sm space-y-2 border-l-2 border-primary/50 pl-4">
                 <p>Resolución sanitaria 3173 y 3174 del 02/06/2020.</p>
