@@ -75,7 +75,12 @@ export default function CasateEnCasaSection() {
                     </div>
 
                     {/* Promo Bubble */}
-                    <div className={cn(
+                    <Link
+                        href="https://wa.me/56993382819?text=quiero%20cotizar%20la%20oferta%20de%20%2429.990%20por%20persona"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Cotizar oferta por WhatsApp"
+                        className={cn(
                         "absolute top-4 -right-4 md:top-8 md:-right-2 z-30 bg-primary text-primary-foreground rounded-full p-3 text-center shadow-2xl flex flex-col items-center justify-center h-32 w-32 transform -rotate-12 transition-all duration-1000 ease-out delay-300",
                          "animate-pulse-cta",
                         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
@@ -83,7 +88,7 @@ export default function CasateEnCasaSection() {
                         <span className="font-headline font-bold text-sm uppercase leading-tight block">Oferta por tiempo limitado</span>
                         <span className="font-headline text-3xl font-bold block tracking-tighter">$29.990</span>
                         <span className="text-xs leading-tight block font-semibold">por persona</span>
-                    </div>
+                    </Link>
 
                 </div>
             </div>
