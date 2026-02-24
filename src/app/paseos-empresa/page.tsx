@@ -59,7 +59,7 @@ export default function PaseosEmpresaPage() {
               </p>
               <div className="flex justify-center items-center gap-2 mb-12">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <p className="text-foreground/80 font-semibold">Ubicado en Avda. Sur 250, Maipú, Santiago</p>
+                  <p className="text-foreground/80 font-semibold">A solo 15 minutos de Maipú</p>
               </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-4xl mx-auto">
               <div className="flex flex-col items-center gap-4 text-center">
