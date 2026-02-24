@@ -70,7 +70,7 @@ export default function BurgerCartSection() {
                             Lleva la experiencia completa: un carrito de hamburguesas rápido, caliente y lleno de sabor para sorprender a tus invitados.
                         </p>
                         <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105">
-                            <Link href="#contacto">
+                            <Link href="/santo-gusto">
                                 <span>Conocer Más</span>
                                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                             </Link>

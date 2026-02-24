@@ -67,6 +67,9 @@ export default function Header() {
                  <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/paseos">Paseos</Link>
                 </Button>
+                <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
+                    <Link href="/santo-gusto">Santo Gusto</Link>
+                </Button>
                 <Button asChild size="sm" className="rounded-full animate-pulse-cta transition-transform hover:scale-110">
                     <Link href="/casate-en-casa">Cásate en Casa</Link>
                 </Button>
@@ -100,6 +103,9 @@ export default function Header() {
              <div className="flex flex-col items-center gap-4 mt-4">
                  <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/paseos" onClick={() => setIsMenuOpen(false)}>Paseos</Link>
+                </Button>
+                 <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
+                    <Link href="/santo-gusto" onClick={() => setIsMenuOpen(false)}>Santo Gusto</Link>
                 </Button>
                 <Button asChild className="rounded-full transition-transform hover:scale-110" size="lg">
                     <Link href="/casate-en-casa" onClick={() => setIsMenuOpen(false)}>Cásate en Casa</Link>
