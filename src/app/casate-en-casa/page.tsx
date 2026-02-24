@@ -14,6 +14,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { cn } from "@/lib/utils";
 
 const TikTokIconSVG = () => (
     <svg className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -28,10 +29,28 @@ const dancerImages = [
     "/bailarines3.jpeg",
 ];
 
+const descriptionImages = [
+    "/casate1.jpeg",
+    "/casate2.jpeg",
+    "/casate3.jpeg",
+    "/casate4.jpeg",
+    "/casate5.jpeg",
+];
+
 export default function CasateEnCasaPage() {
     const plugin = React.useRef(
         Autoplay({ delay: 2500, stopOnInteraction: true })
     );
+
+    const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+
+    React.useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % descriptionImages.length);
+        }, 4000); // Change image every 4 seconds
+
+        return () => clearInterval(timer);
+    }, []);
 
   return (
     <div className="bg-background text-foreground">
@@ -94,13 +113,21 @@ export default function CasateEnCasaPage() {
                 <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Coordinación profesional durante todo el evento.</li>
               </ul>
             </div>
-            <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl group border-4 border-white/10">
-                 <Image
-                    src="/fotoseventos/c3.png"
-                    alt="Boda íntima en casa"
-                    fill
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                  />
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
+                 {descriptionImages.map((src, index) => (
+                    <Image
+                        key={index}
+                        src={src}
+                        alt={`Decoración de boda en casa ${index + 1}`}
+                        fill
+                        className={cn(
+                            "object-cover transition-all duration-[2000ms] ease-in-out absolute inset-0",
+                            index === currentImageIndex 
+                                ? 'opacity-100 scale-100' 
+                                : 'opacity-0 scale-105'
+                        )}
+                    />
+                ))}
             </div>
           </div>
         </div>
