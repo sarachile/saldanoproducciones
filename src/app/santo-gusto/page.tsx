@@ -63,8 +63,8 @@ export default function SantoGustoPage() {
             <Image
                 src="/santogusto.png"
                 alt="Santo Gusto Logo"
-                width={400}
-                height={150}
+                width={300}
+                height={112}
                 className="object-contain h-auto mix-blend-screen"
             />
           </div>
