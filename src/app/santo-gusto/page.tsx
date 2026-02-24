@@ -130,7 +130,7 @@ export default function SantoGustoPage() {
             </div>
             <div className="mt-12 text-center">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 animate-pulse-cta px-8 py-6 text-lg rounded-full">
-                    <a href="/menu-santo-gusto.pdf" download>
+                    <a href="/menu-santo-gusto.pdf" download target="_blank" rel="noopener noreferrer">
                         <Download className="mr-2 h-5 w-5" />
                         Descargar el Menú
                     </a>
