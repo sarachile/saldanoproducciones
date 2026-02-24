@@ -80,8 +80,8 @@ export default function CasateEnCasaSection() {
                          "animate-pulse-cta",
                         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
                     )}>
-                        <span className="font-headline font-bold text-md uppercase leading-none block">¡Oferta!</span>
-                        <span className="font-headline text-3xl font-bold block my-1 tracking-tighter">$29.990</span>
+                        <span className="font-headline font-bold text-sm uppercase leading-tight block">Oferta por tiempo limitado</span>
+                        <span className="font-headline text-3xl font-bold block tracking-tighter">$29.990</span>
                         <span className="text-xs leading-tight block font-semibold">por persona</span>
                     </div>
 
