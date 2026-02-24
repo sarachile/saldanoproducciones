@@ -43,14 +43,7 @@ export default function CasateEnCasaPage() {
     );
 
     const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
-
-    React.useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % descriptionImages.length);
-        }, 4000); // Change image every 4 seconds
-
-        return () => clearInterval(timer);
-    }, []);
+    const [isHeroVisible, setIsHeroVisible] = React.useState(false);
 
     // Intersection Observer for animations
     const descSectionRef = React.useRef<HTMLDivElement>(null);
@@ -59,6 +52,13 @@ export default function CasateEnCasaPage() {
     const [isStaffVisible, setStaffVisible] = React.useState(false);
 
     React.useEffect(() => {
+        // Animate bubble on load
+        const bubbleTimer = setTimeout(() => setIsHeroVisible(true), 100);
+
+        const imageTimer = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % descriptionImages.length);
+        }, 4000); // Change image every 4 seconds
+
         const observerOptions = {
             threshold: 0.2,
         };
@@ -67,7 +67,6 @@ export default function CasateEnCasaPage() {
             return new IntersectionObserver(([entry]) => {
                 if (entry.isIntersecting) {
                     setter(true);
-                    // No need to disconnect, TS complains about observer not being defined.
                 }
             }, observerOptions);
         };
@@ -82,6 +81,8 @@ export default function CasateEnCasaPage() {
         if (currentStaffRef) staffObserver.observe(currentStaffRef);
 
         return () => {
+            clearTimeout(bubbleTimer);
+            clearInterval(imageTimer);
             if (currentDescRef) descObserver.disconnect();
             if (currentStaffRef) staffObserver.disconnect();
         };
@@ -126,6 +127,21 @@ export default function CasateEnCasaPage() {
             </Button>
           </div>
         </div>
+        {/* Promo Bubble */}
+        <Link
+            href="https://wa.me/56993382819?text=quiero%20cotizar%20la%20oferta%20de%20%2429.990%20por%20persona"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cotizar oferta por WhatsApp"
+            className={cn(
+            "absolute top-4 -right-4 md:top-8 md:-right-2 z-30 bg-primary text-primary-foreground rounded-full p-3 text-center shadow-2xl flex flex-col items-center justify-center h-32 w-32 transform -rotate-12 transition-all duration-1000 ease-out delay-300",
+                "animate-pulse-cta",
+            isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+        )}>
+            <span className="font-headline font-bold text-sm uppercase leading-tight block">Oferta por tiempo limitado</span>
+            <span className="font-headline text-3xl font-bold block tracking-tighter">$29.990</span>
+            <span className="text-xs leading-tight block font-semibold">por persona</span>
+        </Link>
       </section>
 
       {/* Description Section */}
