@@ -43,8 +43,11 @@ export default function ProductsHeader() {
           className={`text-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
-            Nuestros Productos
+            Nuestras Marcas Especializadas
           </h2>
+          <p className="mt-4 max-w-3xl mx-auto text-lg text-foreground/90 text-balance">
+            Con el objetivo de cubrir cada detalle y ofrecer una solución integral para cada tipo de evento, en Saldaño Producciones hemos desarrollado marcas especializadas, cada una con un enfoque único para garantizar una experiencia excepcional.
+          </p>
         </div>
       </div>
     </section>
