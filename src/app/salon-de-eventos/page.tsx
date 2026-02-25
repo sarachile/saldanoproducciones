@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Check, Mail, Phone, MapPin, Car, Dance, Trees, Users } from 'lucide-react';
+import { Check, Mail, Phone, MapPin, Car, Dance, Trees, Users, PartyPopper } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -42,13 +42,13 @@ export default function SalonDeEventosPage() {
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
           <div className="h-16 w-16 text-primary mb-4 flex items-center justify-center bg-primary/20 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            <PartyPopper className="h-9 w-9" />
           </div>
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
-            Salón de Eventos
+            Eventos
           </h1>
           <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
-            El espacio perfecto para matrimonios, fiestas y eventos corporativos.
+            El lugar perfecto para matrimonios, fiestas y eventos corporativos.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg">
             <Link href="#contacto">
@@ -65,7 +65,7 @@ export default function SalonDeEventosPage() {
                 Un Espacio Versátil y Elegante
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-6 text-balance">
-                Nuestro salón de eventos combina elegancia y comodidad, ofreciendo un ambiente ideal para cualquier tipo de celebración. Con una infraestructura completa y un servicio de primera, nos encargamos de que tu evento sea inolvidable.
+                Nuestro centro de eventos combina elegancia y comodidad, ofreciendo un ambiente ideal para cualquier tipo de celebración. Con una infraestructura completa y un servicio de primera, nos encargamos de que tu evento sea inolvidable.
               </p>
               <div className="flex justify-center items-center gap-2 mb-12">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -120,7 +120,7 @@ export default function SalonDeEventosPage() {
                     </ul>
                 </div>
                 <div className="aspect-[3/4] relative rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
-                    <Image src="/fotoseventos/c.2.14.png" alt="Interior del salón de eventos" fill className="object-cover" />
+                    <Image src="/fotoseventos/c.2.14.png" alt="Interior de evento" fill className="object-cover" />
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@ export default function SalonDeEventosPage() {
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group">
                     <Image
                       src={src}
-                      alt={`Galería de salón de eventos ${index + 1}`}
+                      alt={`Galería de eventos ${index + 1}`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -166,7 +166,7 @@ export default function SalonDeEventosPage() {
       <section id="contacto" className="py-20 md:py-28 bg-card">
           <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
-                  ¿Quieres celebrar en nuestro salón?
+                  ¿Quieres celebrar con nosotros?
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-8">
                   Contáctanos para consultar disponibilidad y recibir una cotización. Estamos listos para hacer de tu evento una ocasión especial.
