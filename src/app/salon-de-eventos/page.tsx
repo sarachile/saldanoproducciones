@@ -125,8 +125,8 @@ export default function SalonDeEventosPage() {
           </Button>
         </div>
         {/* Promo Bubble */}
-        <div className="absolute bottom-6 right-6 z-30 bg-primary text-primary-foreground rounded-lg p-3 text-center shadow-2xl transform -rotate-6 animate-pulse-cta">
-            <span className="font-headline font-bold text-base md:text-lg leading-tight block">¡Reserva con tiempo!</span>
+        <div className="absolute bottom-6 right-6 z-30 bg-primary text-primary-foreground rounded-lg p-4 text-center shadow-2xl transform -rotate-6 animate-pulse-cta">
+            <span className="font-headline font-bold text-lg md:text-xl leading-tight block">¡Reserva con tiempo!</span>
         </div>
       </section>
 
