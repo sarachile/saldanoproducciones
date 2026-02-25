@@ -24,17 +24,17 @@ const TikTokIconSVG = () => (
 );
 
 const dancerImages = [
-    "/bailarines1.jpeg",
-    "/bailarines2.jpeg",
-    "/bailarines3.jpeg",
+    "/casateencasa/bailarines1.jpeg",
+    "/casateencasa/bailarines2.jpeg",
+    "/casateencasa/bailarines3.jpeg",
 ];
 
 const descriptionImages = [
-    "/casate1.jpeg",
-    "/casate2.jpeg",
-    "/casate3.jpeg",
-    "/casate4.jpeg",
-    "/casate5.jpeg",
+    "/casateencasa/casate1.jpeg",
+    "/casateencasa/casate2.jpeg",
+    "/casateencasa/casate3.jpeg",
+    "/casateencasa/casate4.jpeg",
+    "/casateencasa/casate5.jpeg",
 ];
 
 export default function CasateEnCasaPage() {
