@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -73,7 +72,7 @@ export default function PaseosSection() {
                             </Button>
                             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105">
                                 <Link href="/paseos-empresa">
-                                    <span>Eventos de Empresas</span>
+                                    <span>Paseos de Empresa</span>
                                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                                 </Link>
                             </Button>

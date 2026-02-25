@@ -35,14 +35,14 @@ export default function PaseosEmpresaPage() {
         <div className="relative z-20 px-4 flex flex-col items-center">
           <Briefcase className="h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
-            Eventos de Empresa
+            Paseos de Empresa
           </h1>
           <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
             Fortalece a tu equipo y celebra logros en un ambiente de relajo y naturaleza.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg">
             <Link href="#contacto">
-                Cotiza tu Evento de Empresa
+                Cotiza tu Paseo de Empresa
             </Link>
           </Button>
         </div>
@@ -55,7 +55,7 @@ export default function PaseosEmpresaPage() {
                 Un Lugar para Desconectar y Celebrar
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-6 text-balance">
-                Nuestra parcela para eventos está equipada con todo lo necesario para que tu evento de empresa sea un éxito. Disfruta de amplias áreas verdes, piscina y salones en un ambiente privado ideal para el networking y la camaradería.
+                Nuestra parcela para eventos está equipada con todo lo necesario para que tu paseo de empresa sea un éxito. Disfruta de amplias áreas verdes, piscina y salones en un ambiente privado ideal para el networking y la camaradería.
               </p>
               <div className="flex justify-center items-center gap-2 mb-12">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -122,10 +122,10 @@ export default function PaseosEmpresaPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
-                Nuestros Eventos en Imágenes
+                Nuestros Paseos en Imágenes
             </h2>
             <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Revive los mejores momentos de nuestros eventos en nuestra parcela.
+                Revive los mejores momentos de nuestros paseos en nuestra parcela.
             </p>
           </div>
           <Carousel
@@ -139,7 +139,7 @@ export default function PaseosEmpresaPage() {
                   <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group">
                     <Image
                       src={src}
-                      alt={`Galería de evento de empresa ${index + 1}`}
+                      alt={`Galería de paseo de empresa ${index + 1}`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -160,7 +160,7 @@ export default function PaseosEmpresaPage() {
                   ¿Listos para un día inolvidable?
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-8">
-                  Contáctanos para recibir una cotización personalizada. Organizaremos un evento que tu equipo recordará por siempre.
+                  Contáctanos para recibir una cotización personalizada. Organizaremos un paseo que tu equipo recordará por siempre.
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                     <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base">

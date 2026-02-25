@@ -68,7 +68,7 @@ export default function Header() {
                     <Link href="/paseos-escolares">Paseos de Curso</Link>
                 </Button>
                 <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
-                    <Link href="/paseos-empresa">Eventos de Empresa</Link>
+                    <Link href="/paseos-empresa">Paseos de Empresa</Link>
                 </Button>
                 <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/santo-gusto">Santo Gusto</Link>
@@ -108,7 +108,7 @@ export default function Header() {
                     <Link href="/paseos-escolares" onClick={() => setIsMenuOpen(false)}>Paseos de Curso</Link>
                 </Button>
                 <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
-                    <Link href="/paseos-empresa" onClick={() => setIsMenuOpen(false)}>Eventos de Empresa</Link>
+                    <Link href="/paseos-empresa" onClick={() => setIsMenuOpen(false)}>Paseos de Empresa</Link>
                 </Button>
                  <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/santo-gusto" onClick={() => setIsMenuOpen(false)}>Santo Gusto</Link>
