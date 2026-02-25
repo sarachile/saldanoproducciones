@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Check, Mail, Phone, MapPin, Car, Dance, Trees, Users, PartyPopper } from 'lucide-react';
+import { Check, Mail, Phone, MapPin, Car, Music, Trees, Users, PartyPopper } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -92,7 +92,7 @@ export default function SalonDeEventosPage() {
               </div>
                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="p-5 rounded-full bg-card border border-border">
-                    <Dance className="h-12 w-12" />
+                    <Music className="h-12 w-12" />
                   </div>
                   <span className="text-foreground/80 font-semibold">Pista de Baile</span>
               </div>
