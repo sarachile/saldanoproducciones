@@ -26,7 +26,7 @@ export default function PaseosEmpresaPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="/empresas/pe4.jpeg"
+          src="/empresas/pe20.jpeg"
           alt="Paseos de empresa"
           fill
           className="absolute inset-0 w-full h-full object-cover"
@@ -37,7 +37,7 @@ export default function PaseosEmpresaPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
             Paseos de Empresa
           </h1>
-          <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
+          <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance drop-shadow-lg">
             Fortalece a tu equipo y celebra logros en un ambiente de relajo y naturaleza.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg">
