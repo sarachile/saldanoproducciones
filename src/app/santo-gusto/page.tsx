@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -46,11 +45,11 @@ export default function SantoGustoPage() {
     const party = useAnimateOnScroll();
 
     const products = [
-      { name: 'Hamburguesas', src: '/hamburguesa.jpg', hint: 'gourmet burger' },
-      { name: 'Papas Fritas', src: '/papasfritas.jpg', hint: 'french fries' },
-      { name: 'Completos', src: '/completo.jpg', hint: 'hot dog' },
-      { name: 'Churrascos', src: '/churrasco.jpg', hint: 'steak sandwich' },
-      { name: 'Fajitas', src: '/fajitas.jpg', hint: 'fajitas wrap' },
+      { name: 'Hamburguesas', src: '/hamburguesa.jpeg', hint: 'gourmet burger' },
+      { name: 'Papas Fritas', src: '/papasfritas.jpeg', hint: 'french fries' },
+      { name: 'Completos', src: '/completo.jpeg', hint: 'hot dog' },
+      { name: 'Churrascos', src: '/churrasco.jpeg', hint: 'steak sandwich' },
+      { name: 'Fajitas', src: '/fajitas.jpeg', hint: 'fajitas wrap' },
     ];
 
   return (
@@ -217,5 +216,3 @@ export default function SantoGustoPage() {
     </div>
   );
 }
-
-    
