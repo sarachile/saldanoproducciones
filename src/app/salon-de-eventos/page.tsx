@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -162,10 +163,10 @@ export default function SalonDeEventosPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
-                Explora Nuestro Espacio
+                Nuestras Producciones en Imágenes
             </h2>
             <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Imágenes de eventos realizados en nuestro salón.
+                Una muestra de la calidad y el detalle que ponemos en cada celebración.
             </p>
           </div>
           <Carousel
