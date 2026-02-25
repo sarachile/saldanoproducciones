@@ -42,7 +42,7 @@ export default function PaseosSection() {
                     isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 )}>
                     <Image
-                        src="/p1.jpeg"
+                        src="/p4.jpeg"
                         alt="Paseos de empresa y escolares"
                         fill
                         className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
