@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -43,6 +44,14 @@ export default function SantoGustoPage() {
     const about = useAnimateOnScroll();
     const menu = useAnimateOnScroll();
     const party = useAnimateOnScroll();
+
+    const products = [
+      { name: 'Hamburguesas', src: '/hamburguesa.jpg', hint: 'gourmet burger' },
+      { name: 'Papas Fritas', src: '/papasfritas.jpg', hint: 'french fries' },
+      { name: 'Completos', src: '/completo.jpg', hint: 'hot dog' },
+      { name: 'Churrascos', src: '/churrasco.jpg', hint: 'steak sandwich' },
+      { name: 'Fajitas', src: '/fajitas.jpg', hint: 'fajitas wrap' },
+    ];
 
   return (
     <div className="bg-background text-foreground overflow-x-hidden">
@@ -117,18 +126,25 @@ export default function SantoGustoPage() {
                 </p>
             </div>
             <div className={cn(
-                "flex justify-center transition-all duration-1000 ease-out delay-200",
+                "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 max-w-5xl mx-auto transition-all duration-1000 ease-out delay-200",
                 menu.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
             )}>
-                <Image 
-                    src="/productoscarrito.jpg?v=2"
-                    alt="Menú de productos Santo Gusto"
-                    width={1200}
-                    height={800}
-                    className="rounded-xl shadow-2xl w-full max-w-md h-auto"
-                />
+                {products.map((product) => (
+                    <div key={product.name} className="group flex flex-col items-center text-center gap-4">
+                        <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg border-2 border-card group-hover:border-primary transition-all duration-300 transform group-hover:scale-105">
+                            <Image
+                                src={product.src}
+                                alt={product.name}
+                                fill
+                                className="object-cover"
+                                data-ai-hint={product.hint}
+                            />
+                        </div>
+                        <h3 className="text-lg font-headline font-semibold text-foreground">{product.name}</h3>
+                    </div>
+                ))}
             </div>
-             <div className="text-center mt-8 flex justify-center items-center gap-4">
+             <div className="text-center mt-12 flex justify-center items-center gap-4">
                 <Pizza className="h-6 w-6 text-primary" />
                 <p className="text-foreground/80 text-lg">
                     ¡Pregunta por nuestras <span className="font-bold text-primary/90">Pizzas Artesanales</span> y <span className="font-bold text-primary/90">Empanadas de Horno</span>!
@@ -201,3 +217,5 @@ export default function SantoGustoPage() {
     </div>
   );
 }
+
+    
