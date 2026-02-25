@@ -5,21 +5,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Check, Mail, Phone, School, Trees, Sun, Utensils, MapPin } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-
-const galleryImages = Array.from({ length: 11 }, (_, i) => `/p${i + 1}.jpeg`);
+import { cn } from "@/lib/utils";
 
 export default function PaseosEscolaresPage() {
-    const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: false })
-    );
+    const imageSectionRef = React.useRef<HTMLDivElement>(null);
+    const [isImageVisible, setIsImageVisible] = React.useState(false);
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsImageVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        const currentRef = imageSectionRef.current;
+        if (currentRef) {
+            observer.observe(currentRef);
+        }
+
+        return () => {
+            if (currentRef) {
+                observer.unobserve(currentRef);
+            }
+        };
+    }, []);
 
   return (
     <div className="bg-background text-foreground">
@@ -117,8 +130,8 @@ export default function PaseosEscolaresPage() {
         </div>
       </section>
 
-      {/* Gallery Carousel Section */}
-       <section className="py-20 md:py-28 bg-background">
+      {/* Gallery Image Section */}
+       <section ref={imageSectionRef} className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
@@ -128,28 +141,18 @@ export default function PaseosEscolaresPage() {
                 Revive los mejores momentos de nuestros paseos en nuestra parcela.
             </p>
           </div>
-          <Carousel
-            plugins={[plugin.current]}
-            className="w-full max-w-6xl mx-auto"
-            opts={{ loop: true, align: "start" }}
-          >
-            <CarouselContent>
-              {galleryImages.map((src, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group">
-                    <Image
-                      src={src}
-                      alt={`Galería de paseo de curso ${index + 1}`}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex left-[-40px]" />
-            <CarouselNext className="hidden sm:flex right-[-40px]" />
-          </Carousel>
+          <div className={cn(
+            "relative aspect-video max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 transition-all duration-1000 ease-out",
+            isImageVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
+          )}>
+            <Image
+              src="/paseojugandoalapelota.png"
+              alt="Niños jugando a la pelota en un paseo de curso"
+              width={1280}
+              height={720}
+              className="object-contain w-full h-full"
+            />
+          </div>
         </div>
       </section>
 
