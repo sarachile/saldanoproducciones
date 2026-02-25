@@ -24,17 +24,17 @@ const TikTokIconSVG = () => (
 );
 
 const dancerImages = [
-    "/casateencasa/bailarines1.jpeg",
-    "/casateencasa/bailarines2.jpeg",
-    "/casateencasa/bailarines3.jpeg",
+    "/casateencasa/cc6.jpeg",
+    "/casateencasa/cc7.jpeg",
+    "/casateencasa/cc8.jpeg",
 ];
 
 const descriptionImages = [
-    "/p1.jpeg",
-    "/p4.jpeg",
-    "/p5.jpeg",
-    "/p6.jpeg",
-    "/p7.jpeg",
+    "/casateencasa/cc1.jpeg",
+    "/casateencasa/cc2.jpeg",
+    "/casateencasa/cc3.jpeg",
+    "/casateencasa/cc4.jpeg",
+    "/casateencasa/cc5.jpeg",
 ];
 
 export default function CasateEnCasaPage() {
@@ -176,7 +176,7 @@ export default function CasateEnCasaPage() {
                     <Image
                         key={index}
                         src={src}
-                        alt={`Decoración de evento ${index + 1}`}
+                        alt={`Decoración de Cásate en Casa ${index + 1}`}
                         fill
                         className={cn(
                             "object-cover transition-all duration-[2000ms] ease-in-out absolute inset-0",
@@ -229,7 +229,7 @@ export default function CasateEnCasaPage() {
                       <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10">
                         <Image
                           src={src}
-                          alt={`Show de bailarines ${index + 1}`}
+                          alt={`Show de entretenimiento en Cásate en Casa ${index + 1}`}
                           fill
                           className="object-cover object-top"
                         />
