@@ -101,7 +101,7 @@ export default function SalonDeEventosPage() {
       </section>
       
       {/* Galas Escolares Section */}
-      <section className="relative py-20 md:py-36 w-full flex items-center justify-center text-center text-white">
+      <section className="relative py-20 md:py-36 w-full flex items-center justify-center text-center text-white overflow-hidden">
         <video
           src="/herogalasescolares.mp4"
           autoPlay
@@ -123,6 +123,10 @@ export default function SalonDeEventosPage() {
                 Consultar por Galas
             </Link>
           </Button>
+        </div>
+        {/* Promo Bubble */}
+        <div className="absolute bottom-6 right-6 z-30 bg-primary text-primary-foreground rounded-lg p-3 text-center shadow-2xl transform -rotate-6 animate-pulse-cta">
+            <span className="font-headline font-bold text-base md:text-lg leading-tight block">¡Reserva con tiempo!</span>
         </div>
       </section>
 
