@@ -7,12 +7,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
-  { href: "/#quienes-somos", label: "Quiénes Somos" },
-  { href: "/#servicios", label: "Servicios" },
-  { href: "/#galeria", label: "Galería" },
-  { href: "/#contacto", label: "Contacto" },
-];
+const navLinks: { href: string; label: string }[] = [];
 
 const Logo = () => (
     <Link href="/" className="relative h-10 w-40">
