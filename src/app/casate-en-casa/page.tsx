@@ -30,11 +30,11 @@ const dancerImages = [
 ];
 
 const descriptionImages = [
-    "/casateencasa/casate1.jpeg",
-    "/casateencasa/casate2.jpeg",
-    "/casateencasa/casate3.jpeg",
-    "/casateencasa/casate4.jpeg",
-    "/casateencasa/casate5.jpeg",
+    "/p1.jpeg",
+    "/p4.jpeg",
+    "/p5.jpeg",
+    "/p6.jpeg",
+    "/p7.jpeg",
 ];
 
 export default function CasateEnCasaPage() {
@@ -176,7 +176,7 @@ export default function CasateEnCasaPage() {
                     <Image
                         key={index}
                         src={src}
-                        alt={`Decoración de boda en casa ${index + 1}`}
+                        alt={`Decoración de evento ${index + 1}`}
                         fill
                         className={cn(
                             "object-cover transition-all duration-[2000ms] ease-in-out absolute inset-0",
