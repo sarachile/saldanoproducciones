@@ -3,15 +3,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const navLinks = [
   { href: "/#quienes-somos", label: "Quiénes Somos" },
@@ -70,22 +64,12 @@ export default function Header() {
               ))}
             </nav>
             <div className="hidden md:flex items-center gap-2 ml-6">
-                 <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                        <Button variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
-                            Paseos
-                            <ChevronDown className="ml-1 h-4 w-4" />
-                        </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                        <DropdownMenuItem asChild>
-                        <Link href="/paseos-escolares">Paseos de Curso</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                        <Link href="/paseos-empresa">Eventos de Empresa</Link>
-                        </DropdownMenuItem>
-                    </DropdownMenuContent>
-                </DropdownMenu>
+                <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
+                    <Link href="/paseos-escolares">Paseos de Curso</Link>
+                </Button>
+                <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
+                    <Link href="/paseos-empresa">Eventos de Empresa</Link>
+                </Button>
                 <Button asChild variant="default" size="sm" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/santo-gusto">Santo Gusto</Link>
                 </Button>
@@ -120,22 +104,12 @@ export default function Header() {
               </Link>
             ))}
              <div className="flex flex-col items-center gap-4 mt-4">
-                <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                        <Button variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
-                            Paseos
-                            <ChevronDown className="ml-1 h-4 w-4" />
-                        </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                        <DropdownMenuItem asChild>
-                            <Link href="/paseos-escolares" onClick={() => setIsMenuOpen(false)}>Paseos de Curso</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                            <Link href="/paseos-empresa" onClick={() => setIsMenuOpen(false)}>Eventos de Empresa</Link>
-                        </DropdownMenuItem>
-                    </DropdownMenuContent>
-                </DropdownMenu>
+                <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
+                    <Link href="/paseos-escolares" onClick={() => setIsMenuOpen(false)}>Paseos de Curso</Link>
+                </Button>
+                <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
+                    <Link href="/paseos-empresa" onClick={() => setIsMenuOpen(false)}>Eventos de Empresa</Link>
+                </Button>
                  <Button asChild variant="default" size="lg" className="rounded-full transition-transform hover:scale-110">
                     <Link href="/santo-gusto" onClick={() => setIsMenuOpen(false)}>Santo Gusto</Link>
                 </Button>
