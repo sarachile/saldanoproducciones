@@ -196,7 +196,7 @@ export default function CasateEnCasaPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className={cn(
-                "order-2 md:order-2 transition-all duration-1000 ease-out delay-200",
+                "md:order-2 transition-all duration-1000 ease-out delay-200",
                 isStaffVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
             )}>
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
@@ -213,7 +213,7 @@ export default function CasateEnCasaPage() {
               </ul>
             </div>
             <div className={cn(
-                "order-1 md:order-1 transition-all duration-1000 ease-out",
+                "md:order-1 transition-all duration-1000 ease-out",
                 isStaffVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             )}>
               <Carousel
