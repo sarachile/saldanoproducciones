@@ -151,7 +151,7 @@ export default function SalonDeEventosPage() {
                     </ul>
                 </div>
                 <div className="aspect-[3/4] relative rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
-                    <Image src="/eventos.png" alt="Saldaño Producciones Eventos" fill className="object-cover" />
+                    <Image src="/fotoseventos/c.2.8.png" alt="Saldaño Producciones Eventos" fill className="object-cover" />
                 </div>
             </div>
         </div>
