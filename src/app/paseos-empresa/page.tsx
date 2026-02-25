@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-const galleryImages = Array.from({ length: 11 }, (_, i) => `/p${i + 1}.jpeg`);
+const galleryImages = Array.from({ length: 22 }, (_, i) => `/empresas/pe${i + 1}.jpeg`);
 
 export default function PaseosEmpresaPage() {
     const plugin = React.useRef(
@@ -26,7 +26,7 @@ export default function PaseosEmpresaPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="/p4.jpeg"
+          src="/empresas/pe4.jpeg"
           alt="Paseos de empresa"
           fill
           className="absolute inset-0 w-full h-full object-cover"
