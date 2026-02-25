@@ -137,12 +137,17 @@ export default function SalonDeEventosPage() {
                     <p className="text-lg text-foreground/90 mb-8 text-balance">
                         Ofrecemos un servicio integral que cubre todos los aspectos de tu evento, desde el catering hasta la producción técnica.
                     </p>
-                    <ul className="space-y-4 text-lg">
+                    <ul className="space-y-4 text-lg grid md:grid-cols-2 gap-x-8 gap-y-4">
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Salón principal climatizado.</li>
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Servicio de banquetería de alta cocina.</li>
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Iluminación y sonido profesional.</li>
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Decoración y ambientación personalizada.</li>
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Coordinador de eventos dedicado.</li>
+                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Fiesta de gala para empresas.</li>
+                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Fiestas de bautizo.</li>
+                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Asados campestres.</li>
+                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Almuerzos asados buffet.</li>
+                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Catering para capacitaciones y actividades empresariales.</li>
                     </ul>
                 </div>
                 <div className="aspect-[3/4] relative rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
