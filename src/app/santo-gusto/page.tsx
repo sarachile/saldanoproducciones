@@ -45,11 +45,11 @@ export default function SantoGustoPage() {
     const party = useAnimateOnScroll();
 
     const products = [
-      { name: 'Hamburguesas', src: '/hamburguesa.jpeg', hint: 'gourmet burger' },
-      { name: 'Papas Fritas', src: '/papasfritas.jpeg', hint: 'french fries' },
-      { name: 'Completos', src: '/completo.jpeg', hint: 'hot dog' },
-      { name: 'Churrascos', src: '/churrasco.jpeg', hint: 'steak sandwich' },
-      { name: 'Fajitas', src: '/fajitas.jpeg', hint: 'fajitas wrap' },
+      { name: 'Hamburguesas', src: '/hamburguesa.png', hint: 'gourmet burger' },
+      { name: 'Papas Fritas', src: '/papasfritas.png', hint: 'french fries' },
+      { name: 'Completos', src: '/completo.png', hint: 'hot dog' },
+      { name: 'Churrascos', src: '/churrasco.png', hint: 'steak sandwich' },
+      { name: 'Fajitas', src: '/fajitas.png', hint: 'fajitas wrap' },
     ];
 
   return (
