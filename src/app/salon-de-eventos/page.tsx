@@ -99,6 +99,32 @@ export default function SalonDeEventosPage() {
           </div>
         </div>
       </section>
+      
+      {/* Galas Escolares Section */}
+      <section className="relative py-20 md:py-36 w-full flex items-center justify-center text-center text-white">
+        <video
+          src="/herogalasescolares.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="relative z-20 px-4 flex flex-col items-center">
+          <h2 className="text-3xl md:text-5xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
+            Galas Escolares
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/90 mb-8 text-balance">
+            Organizamos graduaciones y galas de fin de año inolvidables para colegios, con una producción de primer nivel en un ambiente seguro y elegante.
+          </p>
+          <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-foreground">
+            <Link href="#contacto">
+                Consultar por Galas
+            </Link>
+          </Button>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section className="py-20 md:py-28 bg-card">
