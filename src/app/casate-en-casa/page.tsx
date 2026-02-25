@@ -30,11 +30,11 @@ const dancerImages = [
 ];
 
 const descriptionImages = [
-    "/casateencasa/casate1.jpeg",
-    "/casateencasa/casate2.jpeg",
-    "/casateencasa/casate3.jpeg",
-    "/casateencasa/casate4.jpeg",
-    "/casateencasa/casate5.jpeg",
+    "/casateencasa/casate1.jpg",
+    "/casateencasa/casate2.jpg",
+    "/casateencasa/casate3.jpg",
+    "/casateencasa/casate4.jpg",
+    "/casateencasa/casate5.jpg",
 ];
 
 export default function CasateEnCasaPage() {
