@@ -35,10 +35,11 @@ export default function SalonDeEventosPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="/fotoseventos/c.2.8.png"
+          src="/fotoseventos/c.2.3.png"
           alt="Salón de eventos"
           fill
           className="absolute inset-0 w-full h-full object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
@@ -66,7 +67,7 @@ export default function SalonDeEventosPage() {
                 Contamos con Espacios Versátiles y Elegantes
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-12 text-balance">
-                ofreciendo un ambiente ideal para cualquier tipo de celebración. Con una infraestructura completa y un servicio de primera, nos encargamos de que tu evento sea inolvidable.
+                Ofreciendo un ambiente ideal para cualquier tipo de celebración. Con una infraestructura completa y un servicio de primera, nos encargamos de que tu evento sea inolvidable.
               </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-4xl mx-auto">
               <div className="flex flex-col items-center gap-4 text-center">
