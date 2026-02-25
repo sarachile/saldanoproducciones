@@ -129,7 +129,7 @@ export default function SalonDeEventosPage() {
       {/* Services Section */}
       <section className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h3 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-6">
                         Todo lo que Necesitas en un Solo Lugar
@@ -147,7 +147,7 @@ export default function SalonDeEventosPage() {
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Fiestas de bautizo.</li>
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Asados campestres.</li>
                         <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Almuerzos asados buffet.</li>
-                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Catering para capacitaciones y actividades empresariales.</li>
+                        <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Catering para capacitaciones.</li>
                     </ul>
                 </div>
                 <div className="aspect-[3/4] relative rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
@@ -162,10 +162,10 @@ export default function SalonDeEventosPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
-                Nuestras Producciones en Imágenes
+                Calidad y Detalle en Cada Celebración
             </h2>
             <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Una muestra de la calidad y el detalle que ponemos en cada celebración.
+                Revive algunos de los momentos que hemos creado para nuestros clientes.
             </p>
           </div>
           <Carousel
@@ -176,7 +176,7 @@ export default function SalonDeEventosPage() {
             <CarouselContent>
               {galleryImages.map((src, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group" onClick={() => {}}>
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group">
                     <Image
                       src={src}
                       alt={`Galería de eventos ${index + 1}`}
