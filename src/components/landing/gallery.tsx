@@ -96,9 +96,9 @@ export default function Gallery() {
         >
           <CarouselContent className="-ml-4">
             {images.map((src, index) => (
-              <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 pl-4">
+              <CarouselItem key={index} className="basis-1/2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 pl-4">
                 <div 
-                  className="group/item relative aspect-video overflow-hidden rounded-xl cursor-pointer shadow-lg border-2 border-white/10"
+                  className="group/item relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer shadow-lg border-2 border-white/10"
                   onClick={() => openLightbox(index)}
                 >
                   <Image
