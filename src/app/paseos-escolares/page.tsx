@@ -26,7 +26,7 @@ export default function PaseosEscolaresPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="/p4.jpeg"
+          src="/paseocurso1.png"
           alt="Paseos de curso"
           fill
           className="absolute inset-0 w-full h-full object-cover"
