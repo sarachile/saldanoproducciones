@@ -34,7 +34,7 @@ export default function SalonDeEventosPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="/p1.jpeg" // Using an existing image for the background
+          src="/fotoseventos/c.2.8.png"
           alt="Salón de eventos"
           fill
           className="absolute inset-0 w-full h-full object-cover"
