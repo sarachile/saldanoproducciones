@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-// Use some existing images for the gallery
 const galleryImages = [
   "/fotoseventos/c.2.2.png",
   "/fotoseventos/c.2.8.png",
@@ -122,7 +121,6 @@ export default function SalonDeEventosPage() {
             </Link>
           </Button>
         </div>
-        {/* Promo Bubble */}
         <div className="absolute bottom-6 right-6 z-30 bg-primary text-primary-foreground rounded-lg p-4 text-center shadow-2xl transform -rotate-6 animate-pulse-cta">
             <span className="font-headline font-bold text-lg md:text-xl leading-tight block">¡Reserva con tiempo!</span>
         </div>
@@ -178,7 +176,7 @@ export default function SalonDeEventosPage() {
             <CarouselContent>
               {galleryImages.map((src, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 group" onClick={() => {}}>
                     <Image
                       src={src}
                       alt={`Galería de eventos ${index + 1}`}

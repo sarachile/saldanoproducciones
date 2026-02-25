@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -30,6 +31,7 @@ export default function PaseosEmpresaPage() {
           alt="Paseos de empresa"
           fill
           className="absolute inset-0 w-full h-full object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
