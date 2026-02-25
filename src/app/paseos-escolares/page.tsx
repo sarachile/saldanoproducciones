@@ -8,21 +8,21 @@ import { Check, Mail, Phone, School, Trees, Sun, Utensils, MapPin } from 'lucide
 import { cn } from "@/lib/utils";
 
 export default function PaseosEscolaresPage() {
-    const imageSectionRef = React.useRef<HTMLDivElement>(null);
-    const [isImageVisible, setIsImageVisible] = React.useState(false);
+    const servicesSectionRef = React.useRef<HTMLDivElement>(null);
+    const [isServicesVisible, setIsServicesVisible] = React.useState(false);
 
     React.useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setIsImageVisible(true);
+                    setIsServicesVisible(true);
                     observer.disconnect();
                 }
             },
             { threshold: 0.2 }
         );
 
-        const currentRef = imageSectionRef.current;
+        const currentRef = servicesSectionRef.current;
         if (currentRef) {
             observer.observe(currentRef);
         }
@@ -106,58 +106,48 @@ export default function PaseosEscolaresPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 md:py-28 bg-card">
+      <section ref={servicesSectionRef} className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="flex items-center gap-4 mb-6">
-                <School className="h-10 w-10 text-primary" />
-                <h3 className="text-2xl md:text-3xl font-headline font-bold text-primary">
-                    Todo Incluido para un Día Genial
-                </h3>
+            <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
+              <div className={cn(
+                "transition-all duration-1000 ease-out",
+                isServicesVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+              )}>
+                <div className="flex items-center gap-4 mb-6">
+                  <School className="h-10 w-10 text-primary" />
+                  <h3 className="text-2xl md:text-3xl font-headline font-bold text-primary">
+                      Todo Incluido para un Día Genial
+                  </h3>
+                </div>
+                <p className="text-lg text-foreground/90 mb-8 text-balance">
+                  Una jornada llena de risas, juegos y aprendizaje en un entorno seguro y estimulante, planificada para que los estudiantes y profesores solo se preocupen de disfrutar.
+                </p>
+                <ul className="space-y-4 text-lg grid sm:grid-cols-2 gap-x-8 gap-y-4">
+                  <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Monitores a cargo del grupo.</li>
+                  <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Actividades recreativas y deportivas.</li>
+                  <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Alimentación completa y saludable.</li>
+                  <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Acceso a piscina y áreas de juego.</li>
+                  <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Amplificación y música ambiente.</li>
+                  <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Seguridad y personal de primeros auxilios.</li>
+                </ul>
               </div>
-              <p className="text-lg text-foreground/90 mb-8 text-balance">
-                Una jornada llena de risas, juegos y aprendizaje en un entorno seguro y estimulante, planificada para que los estudiantes y profesores solo se preocupen de disfrutar.
-              </p>
-              <ul className="space-y-4 text-lg grid md:grid-cols-2 gap-x-8 gap-y-4">
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Monitores a cargo del grupo.</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Actividades recreativas y deportivas.</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Alimentación completa y saludable.</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Acceso a piscina y áreas de juego.</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Amplificación y música ambiente.</li>
-                <li className="flex items-center gap-3"><Check className="h-6 w-6 text-primary flex-shrink-0" /> Seguridad y personal de primeros auxilios.</li>
-              </ul>
+              <div className={cn(
+                "relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 transition-all duration-1000 ease-out delay-200",
+                isServicesVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+              )}>
+                <Image
+                  src="/paseojugandoalapelota.png"
+                  alt="Niños jugando a la pelota en un paseo de curso"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
         </div>
       </section>
 
-      {/* Gallery Image Section */}
-       <section ref={imageSectionRef} className="py-20 md:py-28 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
-                Nuestros Paseos en Imágenes
-            </h2>
-            <p className="mt-2 max-w-2xl mx-auto text-lg text-foreground/90">
-                Revive los mejores momentos de nuestros paseos en nuestra parcela.
-            </p>
-          </div>
-          <div className={cn(
-            "relative aspect-video max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl border-4 border-white/10 transition-all duration-1000 ease-out",
-            isImageVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
-          )}>
-            <Image
-              src="/paseojugandoalapelota.png"
-              alt="Niños jugando a la pelota en un paseo de curso"
-              width={1280}
-              height={720}
-              className="object-contain w-full h-full"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section id="contacto" className="py-20 md:py-28 bg-card">
+      <section id="contacto" className="py-20 md:py-28 bg-background">
           <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
                   ¿Listos para un paseo de curso inolvidable?
