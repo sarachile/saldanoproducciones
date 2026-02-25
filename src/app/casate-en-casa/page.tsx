@@ -24,9 +24,9 @@ const TikTokIconSVG = () => (
 );
 
 const dancerImages = [
-    "/casateencasa/cc6.jpeg",
-    "/casateencasa/cc7.jpeg",
-    "/casateencasa/cc8.jpeg",
+    "/bailarines1.jpeg",
+    "/bailarines2.jpeg",
+    "/bailarines3.jpeg",
 ];
 
 const descriptionImages = [
