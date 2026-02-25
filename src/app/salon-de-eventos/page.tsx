@@ -62,15 +62,11 @@ export default function SalonDeEventosPage() {
       <section className="py-20 md:py-28 text-center">
         <div className="container mx-auto px-4">
              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mb-6">
-                Un Espacio Versátil y Elegante
+                Contamos con Espacios Versátiles y Elegantes
               </h2>
-              <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-6 text-balance">
-                Nuestro centro de eventos combina elegancia y comodidad, ofreciendo un ambiente ideal para cualquier tipo de celebración. Con una infraestructura completa y un servicio de primera, nos encargamos de que tu evento sea inolvidable.
+              <p className="max-w-3xl mx-auto text-lg text-foreground/90 mb-12 text-balance">
+                ofreciendo un ambiente ideal para cualquier tipo de celebración. Con una infraestructura completa y un servicio de primera, nos encargamos de que tu evento sea inolvidable.
               </p>
-              <div className="flex justify-center items-center gap-2 mb-12">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <p className="text-foreground/80 font-semibold">Ubicación privilegiada a solo 15 minutos de Maipú</p>
-              </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-4xl mx-auto">
               <div className="flex flex-col items-center gap-4 text-center">
                   <div className="p-5 rounded-full bg-card border border-border">
