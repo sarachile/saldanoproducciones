@@ -48,9 +48,14 @@ export default function VenueBanner() {
             <h2 className="text-4xl md:text-6xl font-headline font-bold text-primary-foreground leading-[1.1]">
               Salones Propios <br /> Equipados para Ti
             </h2>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium text-balance">
-              Contamos con todas las condiciones sanitarias, técnicas y de confort para ofrecerte el mejor servicio y una experiencia de alta gama en cada detalle.
-            </p>
+            <div className="space-y-4">
+              <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium text-balance">
+                Contamos con todas las condiciones sanitarias, técnicas y de confort para ofrecerte el mejor servicio en toda nuestra gama de eventos.
+              </p>
+              <p className="text-lg md:text-xl text-primary-foreground/80 font-bold bg-white/10 py-3 px-6 rounded-lg backdrop-blur-sm inline-block">
+                Matrimonios • Bautizos • Eventos Empresariales • Aniversarios • Galas • Y más
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4 w-full lg:w-auto">
