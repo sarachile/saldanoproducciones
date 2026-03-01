@@ -2,6 +2,9 @@
 # https://firebase.google.com/docs/app-hosting/configure
 
 runConfig:
-  # Increase this value if you'd like to automatically spin up
-  # more instances in response to increased traffic.
-  maxInstances: 1
+  # Aumentamos el número máximo de instancias para permitir que el sitio escale
+  # y no rechace solicitudes cuando hay varios usuarios o bots accediendo.
+  maxInstances: 10
+  # Especificamos recursos base para asegurar un buen rendimiento con videos y galerías.
+  cpu: 1
+  memoryMiB: 512
