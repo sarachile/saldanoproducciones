@@ -7,9 +7,9 @@ import Footer from '@/components/landing/footer';
 import WhatsAppButton from '@/components/landing/whatsapp-button';
 
 export const metadata: Metadata = {
-  title: 'Saldaño Producciones - Eventos Premium',
-  description: 'Empresa dedicada a eventos, catering y producción de alta gama.',
-  keywords: 'eventos, bodas, catering, producción, matrimonios, eventos corporativos',
+  title: 'Saldaño Producciones - Eventos Premium en Chile',
+  description: 'Empresa líder en eventos, catering y producción de alta gama en toda la Región Metropolitana. Matrimonios, eventos corporativos y más.',
+  keywords: 'eventos, bodas, catering, producción, matrimonios, eventos corporativos, chile, santiago, maipu',
 };
 
 export default function RootLayout({
