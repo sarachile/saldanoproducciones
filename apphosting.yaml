@@ -2,9 +2,13 @@
 # https://firebase.google.com/docs/app-hosting/configure
 
 runConfig:
-  # Aumentamos el número máximo de instancias para permitir que el sitio escale
-  # y no rechace solicitudes cuando hay varios usuarios o bots accediendo.
-  maxInstances: 10
-  # Especificamos recursos base para asegurar un buen rendimiento con videos y galerías.
+  # Aumentamos significativamente el número máximo de instancias para manejar ráfagas de tráfico
+  # y evitar que las solicitudes sean rechazadas con error 429.
+  maxInstances: 50
+  # Mantenemos 0 instancias mínimas para optimizar costos, pero permitimos un escalado más agresivo.
+  minInstances: 0
+  # Definimos la concurrencia para permitir que cada instancia maneje múltiples solicitudes de forma simultánea.
+  concurrency: 80
+  # Aumentamos la memoria a 1GB para mejorar el rendimiento al servir contenido multimedia pesado como videos.
   cpu: 1
-  memoryMiB: 512
+  memoryMiB: 1024
