@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowRight, Trees } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function PaseosSection() {
     const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +54,14 @@ export default function PaseosSection() {
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
                          <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-2">
-                           <Trees className="h-20 w-20 text-white" />
+                           <div className="relative h-20 w-40">
+                             <Image
+                                src="/paseos.png"
+                                alt="Logo Paseos"
+                                fill
+                                className="object-contain"
+                             />
+                           </div>
                            <span className="text-2xl font-headline font-bold text-white tracking-wider">Paseos</span>
                          </div>
                         <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-4 text-balance drop-shadow-md">

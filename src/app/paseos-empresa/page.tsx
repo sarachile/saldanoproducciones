@@ -1,11 +1,10 @@
-
 "use client";
 
 import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Check, Mail, Phone, Briefcase, Trees, Sun, Utensils, MapPin } from 'lucide-react';
+import { Check, Mail, Phone, Trees, Sun, Utensils, MapPin } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -35,7 +34,15 @@ export default function PaseosEmpresaPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <Briefcase className="h-16 w-16 text-primary mb-4" />
+          <div className="relative h-24 w-24 mb-4">
+             <Image
+                src="/paseosempresa.png"
+                alt="Logo Paseos Empresa"
+                fill
+                className="object-contain"
+                priority
+             />
+          </div>
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
             Paseos de Empresa
           </h1>
@@ -99,7 +106,14 @@ export default function PaseosEmpresaPage() {
         <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
                  <div className="flex items-center gap-4 mb-6">
-                    <Briefcase className="h-10 w-10 text-primary" />
+                    <div className="relative h-12 w-12 flex-shrink-0">
+                      <Image
+                        src="/paseosempresa.png"
+                        alt="Logo Paseos Empresa"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                     <h3 className="text-2xl md:text-3xl font-headline font-bold text-primary">
                         Servicios a la Medida de tu Empresa
                     </h3>

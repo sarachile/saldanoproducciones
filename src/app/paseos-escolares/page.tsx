@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Check, Mail, Phone, School, Trees, Sun, Utensils, MapPin } from 'lucide-react';
+import { Check, Mail, Phone, Trees, Sun, Utensils, MapPin } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 export default function PaseosEscolaresPage() {
@@ -46,7 +46,15 @@ export default function PaseosEscolaresPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <School className="h-16 w-16 text-primary mb-4" />
+          <div className="relative h-24 w-24 mb-4">
+             <Image
+                src="/paseos.png"
+                alt="Logo Paseos Escolares"
+                fill
+                className="object-contain"
+                priority
+             />
+          </div>
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
             Paseos de Curso
           </h1>
@@ -114,7 +122,14 @@ export default function PaseosEscolaresPage() {
                 isServicesVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
               )}>
                 <div className="flex items-center gap-4 mb-6">
-                  <School className="h-10 w-10 text-primary" />
+                  <div className="relative h-12 w-12 flex-shrink-0">
+                    <Image
+                      src="/paseos.png"
+                      alt="Logo Paseos Escolares"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                   <h3 className="text-2xl md:text-3xl font-headline font-bold text-primary">
                       Todo Incluido para un Día Genial
                   </h3>

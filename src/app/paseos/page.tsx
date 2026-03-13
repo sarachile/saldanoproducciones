@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { School, Briefcase, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function PaseosPage() {
@@ -57,7 +57,14 @@ export default function PaseosPage() {
                   </div>
                   <div className="p-6 bg-card flex-grow flex flex-col">
                     <div className="flex items-center gap-4 mb-4">
-                      <School className="h-8 w-8 text-primary" />
+                      <div className="relative h-12 w-12 flex-shrink-0">
+                        <Image
+                          src="/paseos.png"
+                          alt="Logo Paseos Escolares"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                       <h3 className="text-2xl font-headline font-bold">Paseos Escolares</h3>
                     </div>
                     <p className="text-foreground/80 mb-6 flex-grow">
@@ -87,7 +94,14 @@ export default function PaseosPage() {
                   </div>
                   <div className="p-6 bg-card flex-grow flex flex-col">
                     <div className="flex items-center gap-4 mb-4">
-                      <Briefcase className="h-8 w-8 text-primary" />
+                      <div className="relative h-12 w-12 flex-shrink-0">
+                        <Image
+                          src="/paseosempresa.png"
+                          alt="Logo Paseos de Empresa"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                       <h3 className="text-2xl font-headline font-bold">Paseos de Empresa</h3>
                     </div>
                     <p className="text-foreground/80 mb-6 flex-grow">
