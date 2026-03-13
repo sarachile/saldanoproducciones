@@ -10,6 +10,7 @@ import BurgerCartSection from '@/components/landing/burger-cart-section';
 import PaseosSection from '@/components/landing/paseos-section';
 import ProductsHeader from '@/components/landing/products-header';
 import VenueBanner from '@/components/landing/venue-banner';
+import GalaBanner from '@/components/landing/gala-banner';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <VenueBanner />
+      <GalaBanner />
       <ProductsHeader />
       <CasateEnCasaSection />
       <BurgerCartSection />
