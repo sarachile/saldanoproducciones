@@ -54,7 +54,7 @@ export default function PaseosSection() {
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
                          <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-4">
-                           <div className="relative h-40 w-80">
+                           <div className="relative h-80 w-[640px] max-w-full">
                              <Image
                                 src="/paseos.png"
                                 alt="Logo Paseos"

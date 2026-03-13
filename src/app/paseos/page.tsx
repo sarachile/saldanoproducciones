@@ -57,7 +57,7 @@ export default function PaseosPage() {
                   </div>
                   <div className="p-6 bg-card flex-grow flex flex-col">
                     <div className="flex items-center gap-6 mb-4">
-                      <div className="relative h-24 w-24 flex-shrink-0">
+                      <div className="relative h-48 w-48 flex-shrink-0">
                         <Image
                           src="/paseos.png"
                           alt="Logo Paseos Escolares"
@@ -94,7 +94,7 @@ export default function PaseosPage() {
                   </div>
                   <div className="p-6 bg-card flex-grow flex flex-col">
                     <div className="flex items-center gap-6 mb-4">
-                      <div className="relative h-24 w-24 flex-shrink-0">
+                      <div className="relative h-48 w-48 flex-shrink-0">
                         <Image
                           src="/paseosempresa.png"
                           alt="Logo Paseos de Empresa"
