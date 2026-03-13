@@ -53,8 +53,8 @@ export default function PaseosSection() {
                         "relative z-20 flex flex-col items-center transition-all duration-1000 ease-out delay-200",
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
-                         <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-2">
-                           <div className="relative h-20 w-40">
+                         <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-4">
+                           <div className="relative h-40 w-80">
                              <Image
                                 src="/paseos.png"
                                 alt="Logo Paseos"
@@ -62,7 +62,7 @@ export default function PaseosSection() {
                                 className="object-contain"
                              />
                            </div>
-                           <span className="text-2xl font-headline font-bold text-white tracking-wider">Paseos</span>
+                           <span className="text-3xl font-headline font-bold text-white tracking-wider">Paseos</span>
                          </div>
                         <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-4 text-balance drop-shadow-md">
                             Desconexión y Entretención

@@ -46,7 +46,7 @@ export default function PaseosEscolaresPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <div className="relative h-24 w-24 mb-4">
+          <div className="relative h-48 w-48 mb-6">
              <Image
                 src="/paseos.png"
                 alt="Logo Paseos Escolares"
@@ -58,7 +58,7 @@ export default function PaseosEscolaresPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
             Paseos de Curso
           </h1>
-          <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
+          <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance drop-shadow-lg">
             Jornadas de entretención, aprendizaje y naturaleza para cursos y colegios.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg">
@@ -114,15 +114,15 @@ export default function PaseosEscolaresPage() {
       </section>
 
       {/* Services Section */}
-      <section ref={servicesSectionRef} className="py-20 md:py-28 bg-card">
+      <section className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
               <div className={cn(
                 "transition-all duration-1000 ease-out",
                 isServicesVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
               )}>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="relative h-12 w-12 flex-shrink-0">
+                <div className="flex items-center gap-6 mb-6">
+                  <div className="relative h-24 w-24 flex-shrink-0">
                     <Image
                       src="/paseos.png"
                       alt="Logo Paseos Escolares"

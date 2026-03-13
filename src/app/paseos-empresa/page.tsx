@@ -34,7 +34,7 @@ export default function PaseosEmpresaPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <div className="relative h-24 w-24 mb-4">
+          <div className="relative h-48 w-48 mb-6">
              <Image
                 src="/paseosempresa.png"
                 alt="Logo Paseos Empresa"
@@ -105,8 +105,8 @@ export default function PaseosEmpresaPage() {
       <section className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-                 <div className="flex items-center gap-4 mb-6">
-                    <div className="relative h-12 w-12 flex-shrink-0">
+                 <div className="flex items-center gap-6 mb-6">
+                    <div className="relative h-24 w-24 flex-shrink-0">
                       <Image
                         src="/paseosempresa.png"
                         alt="Logo Paseos Empresa"

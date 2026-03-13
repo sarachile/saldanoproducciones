@@ -23,7 +23,7 @@ export default function PaseosPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold text-white tracking-wider drop-shadow-lg">
             Paseos de Fin de Año
           </h1>
-          <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance">
+          <p className="mt-4 max-w-3xl text-xl md:text-2xl text-white/90 mb-8 text-balance drop-shadow-lg">
             Creamos jornadas inolvidables de entretención y naturaleza en nuestro centro de eventos para colegios y empresas.
           </p>
         </div>
@@ -56,8 +56,8 @@ export default function PaseosPage() {
                     />
                   </div>
                   <div className="p-6 bg-card flex-grow flex flex-col">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="relative h-12 w-12 flex-shrink-0">
+                    <div className="flex items-center gap-6 mb-4">
+                      <div className="relative h-24 w-24 flex-shrink-0">
                         <Image
                           src="/paseos.png"
                           alt="Logo Paseos Escolares"
@@ -93,8 +93,8 @@ export default function PaseosPage() {
                     />
                   </div>
                   <div className="p-6 bg-card flex-grow flex flex-col">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="relative h-12 w-12 flex-shrink-0">
+                    <div className="flex items-center gap-6 mb-4">
+                      <div className="relative h-24 w-24 flex-shrink-0">
                         <Image
                           src="/paseosempresa.png"
                           alt="Logo Paseos de Empresa"
