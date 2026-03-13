@@ -1,6 +1,5 @@
 import HeroSection from '@/components/landing/hero-section';
 import AboutUs from '@/components/landing/about-us';
-import Services from '@/components/landing/services';
 import Gallery from '@/components/landing/gallery';
 import ContactSection from '@/components/landing/contact-section';
 import CommercialPhrase from '@/components/landing/commercial-phrase';
@@ -18,7 +17,6 @@ export default function Home() {
       <HeroSection />
       <CommercialPhrase />
       <AboutUs />
-      <Services />
       <VenueBanner />
       <GalaBanner />
       <ProductsHeader />

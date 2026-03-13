@@ -27,12 +27,12 @@ export default function HeroSection() {
             <Link href="#contacto">Cotiza tu Evento</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            <Link href="#servicios">Ver Servicios</Link>
+            <Link href="#quienes-somos">Quiénes Somos</Link>
           </Button>
         </div>
       </div>
       <div className="absolute bottom-10 z-20">
-        <Link href="#servicios" aria-label="Scroll down">
+        <Link href="#quienes-somos" aria-label="Scroll down">
           <ArrowDown className="h-8 w-8 text-white/70 animate-bounce" />
         </Link>
       </div>
