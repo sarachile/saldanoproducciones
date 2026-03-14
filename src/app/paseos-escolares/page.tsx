@@ -45,7 +45,7 @@ export default function PaseosEscolaresPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <div className="relative h-[600px] w-[600px] mb-8">
+          <div className="relative h-[500px] w-[500px] mb-8">
              <Image
                 src="/paseos.png"
                 alt="Logo Paseos Escolares"
@@ -119,7 +119,7 @@ export default function PaseosEscolaresPage() {
                 isServicesVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
               )}>
                 <div className="flex flex-col items-center md:items-start gap-8 mb-10">
-                  <div className="relative h-[600px] w-[600px] flex-shrink-0">
+                  <div className="relative h-[500px] w-[500px] flex-shrink-0">
                     <Image
                       src="/paseos.png"
                       alt="Logo Paseos Escolares"

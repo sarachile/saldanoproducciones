@@ -85,7 +85,7 @@ export default function VenueBanner() {
                <div className="text-center space-y-4">
                   <span className="text-primary/60 font-headline font-bold text-sm tracking-[0.2em] uppercase block">Promoción Especial</span>
                   <div className="space-y-1">
-                    <span className="text-5xl md:text-6xl font-headline font-bold block">$ 49.990</span>
+                    <span className="text-5xl md:text-6xl font-headline font-bold block">$ 49.990.-</span>
                     <span className="text-primary/70 font-bold text-lg block">por persona</span>
                     <span className="text-sm font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full inline-block">desde 80 invitados</span>
                   </div>

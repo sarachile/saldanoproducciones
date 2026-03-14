@@ -33,7 +33,7 @@ export default function PaseosEmpresaPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <div className="relative h-[600px] w-[600px] mb-8">
+          <div className="relative h-[500px] w-[500px] mb-8">
              <Image
                 src="/paseosempresa.png"
                 alt="Logo Paseos Empresa"
@@ -103,7 +103,7 @@ export default function PaseosEmpresaPage() {
         <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
                  <div className="flex flex-col items-center gap-10 mb-10">
-                    <div className="relative h-[600px] w-[600px] flex-shrink-0">
+                    <div className="relative h-[500px] w-[500px] flex-shrink-0">
                       <Image
                         src="/paseosempresa.png"
                         alt="Logo Paseos Empresa"
