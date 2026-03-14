@@ -30,8 +30,7 @@ export default function GalaBanner() {
   }, []);
 
   return (
-    <section ref={ref} className="relative py-20 md:py-28 overflow-hidden bg-[#121212] group">
-      {/* Subtle Background pattern */}
+    <section ref={ref} className="relative py-20 md:py-28 overflow-hidden bg-[#121212] group border-t border-primary/20">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#FFB703_0%,transparent_50%)]" />
       </div>
@@ -41,7 +40,6 @@ export default function GalaBanner() {
           "max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 transition-all duration-1000 ease-out",
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
         )}>
-          {/* Text Section */}
           <div className="flex-1 text-center lg:text-left space-y-8">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary font-semibold text-sm uppercase tracking-widest">
               <GraduationCap className="h-4 w-4" />
@@ -54,14 +52,13 @@ export default function GalaBanner() {
             </h2>
             
             <p className="text-xl text-white/80 font-medium text-balance max-w-2xl">
-              Áreas verdes, Comedor climatizado, Salón de eventos y Zona de Cocktail. <br className="hidden md:block"/>
-              Todo lo necesario para una noche mágica y segura.
+              Salón de eventos climatizado, áreas verdes y zona de cocktail en un entorno privado y seguro.
             </p>
 
             <div className="space-y-4">
                <div className="flex items-center justify-center lg:justify-start gap-3 text-white/90 font-bold">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span>Últimas fechas disponibles: Domingo a Jueves</span>
+                  <span>Promoción válida: Domingo a Jueves</span>
                </div>
                <div className="flex items-center justify-center lg:justify-start gap-3 text-white/90">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -85,10 +82,8 @@ export default function GalaBanner() {
             </div>
           </div>
 
-          {/* Promotion Card Section */}
           <div className="w-full lg:w-[480px] relative">
             <div className="bg-white rounded-3xl p-8 shadow-[0_0_50px_rgba(255,183,3,0.3)] relative overflow-hidden text-primary border-4 border-primary/20 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-500">
-               
                <div className="text-center space-y-4">
                   <span className="text-primary/60 font-headline font-bold text-sm tracking-[0.2em] uppercase block">Oferta Exclusiva Galas</span>
                   <div className="space-y-1">
@@ -125,16 +120,12 @@ export default function GalaBanner() {
                         ¡COTIZA TU GALA AQUÍ!
                       </Link>
                     </Button>
-                    <p className="mt-4 text-[10px] text-primary/60 font-medium">
-                        *Sujeto a disponibilidad de fechas. Válido para reservas nuevas.
-                    </p>
                   </div>
                </div>
             </div>
             
-            {/* Promo Bubble Overlap */}
             <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground rounded-full h-24 w-24 flex items-center justify-center text-center p-2 shadow-2xl animate-pulse-cta border-4 border-[#121212]">
-              <span className="text-xs font-bold leading-tight uppercase">Últimas<br/>Fechas</span>
+              <span className="text-xs font-bold leading-tight uppercase">Reserva<br/>Ahora</span>
             </div>
           </div>
         </div>

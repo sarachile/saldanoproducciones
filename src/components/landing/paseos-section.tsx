@@ -35,10 +35,10 @@ export default function PaseosSection() {
     }, []);
 
     return (
-        <section ref={ref} id="paseos-home" className="py-8 bg-background overflow-hidden">
+        <section ref={ref} id="paseos-home" className="py-16 bg-background overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className={cn(
-                    "relative rounded-lg overflow-hidden shadow-2xl group transition-all duration-1000 ease-out flex items-center justify-center text-center text-white min-h-[60vh] p-8",
+                    "relative rounded-lg overflow-hidden shadow-2xl group transition-all duration-1000 ease-out flex items-center justify-center text-center text-white min-h-[75vh] p-8",
                     isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 )}>
                     <Image
@@ -53,8 +53,8 @@ export default function PaseosSection() {
                         "relative z-20 flex flex-col items-center transition-all duration-1000 ease-out delay-200",
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
-                         <div className="mb-6 drop-shadow-lg flex flex-col items-center gap-4">
-                           <div className="relative h-80 w-[640px] max-w-full">
+                         <div className="mb-10 drop-shadow-lg flex flex-col items-center gap-6">
+                           <div className="relative h-[400px] w-[600px] max-w-full">
                              <Image
                                 src="/paseos.png"
                                 alt="Logo Paseos"
@@ -62,25 +62,25 @@ export default function PaseosSection() {
                                 className="object-contain"
                              />
                            </div>
-                           <span className="text-3xl font-headline font-bold text-white tracking-wider">Paseos</span>
+                           <span className="text-4xl font-headline font-bold text-white tracking-widest uppercase">Paseos</span>
                          </div>
-                        <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-4 text-balance drop-shadow-md">
-                            Desconexión y Entretención
+                        <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-6 text-balance drop-shadow-md">
+                            Desconexión y Entretención Garantizada
                         </h2>
-                        <p className="max-w-2xl text-lg md:text-xl text-white/90 mb-8 text-balance drop-shadow-sm">
-                            Organizamos jornadas inolvidables para empresas y colegios en nuestra parcela de eventos.
+                        <p className="max-w-2xl text-xl md:text-2xl text-white/90 mb-10 text-balance drop-shadow-sm">
+                            Organizamos jornadas únicas para empresas y colegios en nuestra exclusiva parcela.
                         </p>
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105 border-white text-white hover:bg-white hover:text-primary-foreground">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                            <Button asChild size="lg" variant="outline" className="text-xl px-10 py-8 rounded-full group/btn transition-transform hover:scale-105 border-white text-white hover:bg-white hover:text-primary-foreground">
                                 <Link href="/paseos-escolares">
                                     <span>Paseos de Curso</span>
-                                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                                    <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover/btn:translate-x-1" />
                                 </Link>
                             </Button>
-                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full group/btn transition-transform hover:scale-105">
+                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-xl px-10 py-8 rounded-full group/btn transition-transform hover:scale-105">
                                 <Link href="/paseos-empresa">
                                     <span>Paseos de Empresa</span>
-                                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                                    <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover/btn:translate-x-1" />
                                 </Link>
                             </Button>
                         </div>

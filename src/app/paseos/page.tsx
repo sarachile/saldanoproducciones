@@ -10,7 +10,6 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function PaseosPage() {
   return (
     <div className="bg-background text-foreground">
-      {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[450px] w-full flex items-center justify-center text-center text-white">
         <Image
           src="/p1.jpeg"
@@ -29,7 +28,6 @@ export default function PaseosPage() {
         </div>
       </section>
 
-      {/* Selection Section */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -41,9 +39,8 @@ export default function PaseosPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             
-            {/* Card Paseos Escolares */}
             <Link href="/paseos-escolares" className="group">
               <Card className="overflow-hidden h-full border-2 border-transparent hover:border-primary hover:shadow-2xl transition-all duration-300">
                 <CardContent className="p-0 flex flex-col h-full">
@@ -55,24 +52,22 @@ export default function PaseosPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-6 bg-card flex-grow flex flex-col">
-                    <div className="flex items-center gap-6 mb-4">
-                      <div className="relative h-48 w-48 flex-shrink-0">
-                        <Image
-                          src="/paseos.png"
-                          alt="Logo Paseos Escolares"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      <h3 className="text-2xl font-headline font-bold">Paseos Escolares</h3>
+                  <div className="p-10 bg-card flex-grow flex flex-col items-center text-center">
+                    <div className="relative h-96 w-96 mb-6">
+                      <Image
+                        src="/paseos.png"
+                        alt="Logo Paseos Escolares"
+                        fill
+                        className="object-contain"
+                      />
                     </div>
-                    <p className="text-foreground/80 mb-6 flex-grow">
+                    <h3 className="text-3xl font-headline font-bold mb-4">Paseos Escolares</h3>
+                    <p className="text-foreground/80 mb-6 flex-grow text-lg">
                       Días llenos de juegos, actividades y aprendizaje en un entorno natural, seguro y entretenido para estudiantes de todas las edades.
                     </p>
                     <div className="mt-auto">
-                       <Button variant="link" className="px-0 text-primary group-hover:text-primary/80">
-                         Ver Detalles <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                       <Button variant="link" className="text-xl text-primary group-hover:text-primary/80">
+                         Ver Detalles <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
                        </Button>
                     </div>
                   </div>
@@ -80,7 +75,6 @@ export default function PaseosPage() {
               </Card>
             </Link>
 
-            {/* Card Paseos de Empresa */}
             <Link href="/paseos-empresa" className="group">
               <Card className="overflow-hidden h-full border-2 border-transparent hover:border-primary hover:shadow-2xl transition-all duration-300">
                 <CardContent className="p-0 flex flex-col h-full">
@@ -92,24 +86,22 @@ export default function PaseosPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-6 bg-card flex-grow flex flex-col">
-                    <div className="flex items-center gap-6 mb-4">
-                      <div className="relative h-48 w-48 flex-shrink-0">
-                        <Image
-                          src="/paseosempresa.png"
-                          alt="Logo Paseos de Empresa"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      <h3 className="text-2xl font-headline font-bold">Paseos de Empresa</h3>
+                  <div className="p-10 bg-card flex-grow flex flex-col items-center text-center">
+                    <div className="relative h-96 w-96 mb-6">
+                      <Image
+                        src="/paseosempresa.png"
+                        alt="Logo Paseos de Empresa"
+                        fill
+                        className="object-contain"
+                      />
                     </div>
-                    <p className="text-foreground/80 mb-6 flex-grow">
+                    <h3 className="text-3xl font-headline font-bold mb-4">Paseos de Empresa</h3>
+                    <p className="text-foreground/80 mb-6 flex-grow text-lg">
                       La mejor opción para salir de la rutina, fortalecer lazos entre equipos y celebrar los éxitos del año en un ambiente relajado.
                     </p>
                      <div className="mt-auto">
-                       <Button variant="link" className="px-0 text-primary group-hover:text-primary/80">
-                         Ver Detalles <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                       <Button variant="link" className="text-xl text-primary group-hover:text-primary/80">
+                         Ver Detalles <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
                        </Button>
                     </div>
                   </div>

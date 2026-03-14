@@ -1,4 +1,4 @@
-# Configuración básica para asegurar la compatibilidad del despliegue
+# Configuración simplificada para maximizar compatibilidad en el despliegue
 runConfig:
   cpu: 1
   memoryMiB: 1024
