@@ -1,7 +1,4 @@
-# Configuración de recursos optimizada para Saldaño Producciones
+# Configuración básica para asegurar la compatibilidad del despliegue
 runConfig:
   cpu: 1
   memoryMiB: 1024
-  maxInstances: 10
-  minInstances: 0
-  concurrency: 80
