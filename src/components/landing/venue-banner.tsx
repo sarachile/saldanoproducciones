@@ -29,7 +29,6 @@ export default function VenueBanner() {
 
   return (
     <section ref={ref} className="relative py-20 md:py-32 overflow-hidden bg-primary group">
-      {/* Dynamic Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-white/20 rounded-full blur-[100px] animate-pulse" />
         <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-white/20 rounded-full blur-[100px] animate-pulse delay-1000" />
@@ -40,7 +39,6 @@ export default function VenueBanner() {
           "max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 transition-all duration-1000 ease-out",
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
         )}>
-          {/* Text Section */}
           <div className="flex-1 text-center lg:text-left space-y-8">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 px-4 py-2 rounded-full border border-primary-foreground/20 text-primary-foreground font-semibold text-sm uppercase tracking-widest">
               <ShieldCheck className="h-4 w-4" />
@@ -58,7 +56,7 @@ export default function VenueBanner() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                <div className="flex items-center gap-2 text-primary-foreground/80 font-bold bg-white/10 py-2 px-4 rounded-lg backdrop-blur-sm">
                   <MapPin className="h-5 w-5" />
-                  <span>A solo 20 min. de Plaza Maipú (Camino a Melipilla)</span>
+                  <span>A solo 20 min. de Plaza Maipú (Padre Hurtado)</span>
                </div>
             </div>
 
@@ -82,16 +80,8 @@ export default function VenueBanner() {
             </div>
           </div>
 
-          {/* Promotion Card Section */}
           <div className="w-full lg:w-[450px] relative">
             <div className="bg-white rounded-3xl p-8 shadow-2xl relative overflow-hidden text-primary transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
-               {/* Decorative elements */}
-               <div className="absolute top-0 right-0 p-4">
-                  <div className="bg-primary/10 rounded-full p-2">
-                    <Sparkles className="h-6 w-6 text-primary animate-pulse" />
-                  </div>
-               </div>
-
                <div className="text-center space-y-4">
                   <span className="text-primary/60 font-headline font-bold text-sm tracking-[0.2em] uppercase block">Promoción Especial</span>
                   <div className="space-y-1">
@@ -122,10 +112,6 @@ export default function VenueBanner() {
                     </div>
                   </div>
 
-                  <p className="text-xs text-primary/60 font-medium italic">
-                    Matrimonios • Bautizos • Eventos Empresariales • Aniversarios
-                  </p>
-
                   <div className="pt-4">
                     <button 
                       onClick={() => window.location.href = '#contacto'}
@@ -137,7 +123,6 @@ export default function VenueBanner() {
                </div>
             </div>
             
-            {/* Promo Bubble Overlap */}
             <div className="absolute -top-4 -right-4 bg-destructive text-white rounded-full h-20 w-20 flex items-center justify-center text-center p-2 shadow-xl animate-bounce">
               <span className="text-[10px] font-bold leading-tight uppercase">Cupos<br/>Limitados</span>
             </div>

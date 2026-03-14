@@ -45,7 +45,7 @@ export default function PaseosEscolaresPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 px-4 flex flex-col items-center">
-          <div className="relative h-[450px] w-[450px] mb-8">
+          <div className="relative h-[500px] w-[500px] mb-8">
              <Image
                 src="/paseos.png"
                 alt="Logo Paseos Escolares"
@@ -78,7 +78,7 @@ export default function PaseosEscolaresPage() {
               </p>
               <div className="flex justify-center items-center gap-2 mb-16">
                   <MapPin className="h-6 w-6 text-primary" />
-                  <p className="text-xl text-foreground/80 font-bold">A solo 20 minutos de Maipú</p>
+                  <p className="text-xl text-foreground/80 font-bold">A solo 20 minutos de Maipú (Padre Hurtado)</p>
               </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-primary/70 max-w-5xl mx-auto">
               <div className="flex flex-col items-center gap-6 text-center">
@@ -119,7 +119,7 @@ export default function PaseosEscolaresPage() {
                 isServicesVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
               )}>
                 <div className="flex flex-col items-center md:items-start gap-8 mb-10">
-                  <div className="relative h-96 w-96 flex-shrink-0">
+                  <div className="relative h-[450px] w-[450px] flex-shrink-0">
                     <Image
                       src="/paseos.png"
                       alt="Logo Paseos Escolares"
