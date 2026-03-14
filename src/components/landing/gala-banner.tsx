@@ -42,7 +42,7 @@ export default function GalaBanner() {
         )}>
           <div className="flex-1 text-center lg:text-left space-y-8">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary font-semibold text-sm uppercase tracking-widest">
-              <GraduationCap className="h-4 w-4" />
+              < GraduationCap className="h-4 w-4" />
               Temporada de Galas
             </div>
             
